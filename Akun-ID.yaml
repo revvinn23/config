@@ -1,17 +1,17 @@
 proxies:
   - name: asddawd
-    interface-name: wwan0
-    server: 104.21.8.121
+    interface-name: eth1
+    server: inf-1.namaserver.id
     port: 443
     type: trojan
     password: f1e41fa6-29cd-4a5e-a6a4-63f7c85edbac
     skip-cert-verify: true
-    sni: 104.21.8.121
+    sni: inf-1.namaserver.id
     network: ws
     ws-opts:
-      path: inf-1.namaserver.id
+      path: www.shopee.com
       headers:
-        Host: inf-1.namaserver.id
+        Host: www.shopee.com
     udp: true
     
   - name: doaibu Halo
