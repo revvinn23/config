@@ -1,19 +1,15 @@
 proxies:
-  - name: madsolarrr_ws Halo
+  - name: madsolarrr_xtls Halo
     interface-name: eth1
-    server: 104.16.53.111
-    port: 8880
+    server: melbi.lunoxx.gay
+    port: 443
     type: vless
     uuid: d8aa17c6-fc15-4605-8981-5c6aa61ae66b
     cipher: auto
-    tls: false
+    tls: true
+    flow: xtls-rprx-direct
     skip-cert-verify: true
-    servername: melbi.lunoxx.gay
-    network: ws
-    ws-opts:
-      path: /vlessws
-      headers:
-        Host: melbi.lunoxx.gay
+    servername: www.shopee.com
     udp: true
     
   - name: madsolarrr_ws LiveON
