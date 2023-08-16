@@ -1,0 +1,341 @@
+proxies:
+  - name: doaibu
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 80
+    type: vmess
+    uuid: f5baf15d-79f7-44cc-afa9-5a0c84937504
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: doaibu.revvinn.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: doaibu.revvinn.my.id
+    udp: true
+    
+  - name: herza 443 Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vmess
+    uuid: df96c5b8-a441-4ef1-9662-5879541d0a62
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: herza.wibu-xray.com
+    network: ws
+    ws-opts:
+      path: /wibu
+      headers:
+        Host: herza.wibu-xray.com
+    udp: true
+
+  - name: herza 443 LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vmess
+    uuid: df96c5b8-a441-4ef1-9662-5879541d0a62
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: herza.wibu-xray.com
+    network: ws
+    ws-opts:
+      path: /wibu
+      headers:
+        Host: herza.wibu-xray.com
+    udp: true
+    
+  - name: ikd Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vmess
+    uuid: a9b37675-3728-4141-9554-55e2b8acffd4
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ikd.wibu-xray.com
+    network: ws
+    ws-opts:
+      path: /wibu
+      headers:
+        Host: ikd.wibu-xray.com
+    udp: true
+
+  - name: ikd LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vmess
+    uuid: a9b37675-3728-4141-9554-55e2b8acffd4
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ikd.wibu-xray.com
+    network: ws
+    ws-opts:
+      path: /wibu
+      headers:
+        Host: ikd.wibu-xray.com
+    udp: true
+
+  - name: Baliunited_ws Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vmess
+    uuid: 25e9fe9d-8ba9-4e94-b64e-5e46952cb87c
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: beon.patunganvps.me
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: beon.patunganvps.me
+    udp: true
+
+
+  - name: Baliunited_ws LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vmess
+    uuid: 25e9fe9d-8ba9-4e94-b64e-5e46952cb87c
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: beon.patunganvps.me
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: beon.patunganvps.me
+    udp: true
+
+  - name: madsomplak_ws Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vmess
+    uuid: 66c3ced8-bbbd-40ca-ba4f-682cb3a2a699
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: atharva.lunoxx.gay
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: atharva.lunoxx.gay
+    udp: true
+
+  - name: madsomplak_ws LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vmess
+    uuid: 66c3ced8-bbbd-40ca-ba4f-682cb3a2a699
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: atharva.lunoxx.gay
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: atharva.lunoxx.gay
+    udp: true
+
+  - name: natawsvmess Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vmess
+    uuid: 8bccd774-1517-496a-afc3-ea67639ae3d2
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: nata.wesi.fun
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: nata.wesi.fun
+    udp: true
+
+  - name: natawsvmess LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vmess
+    uuid: 8bccd774-1517-496a-afc3-ea67639ae3d2
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: nata.wesi.fun
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: nata.wesi.fun
+    udp: true
+
+  - name: vmesrm Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 80
+    type: vmess
+    uuid: e1a72034-954b-4cb6-81d2-f83dab00ddb5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: ruma.wesi.fun
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: ruma.wesi.fun
+    udp: true
+
+  - name: vmesrm LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 80
+    type: vmess
+    uuid: e1a72034-954b-4cb6-81d2-f83dab00ddb5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: ruma.wesi.fun
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: ruma.wesi.fun
+    udp: true
+
+  - name: zenlayer.arcvpn.my.id_443 Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: 7a0db2d4-210a-4c8b-8949-8ad2154ca2f2
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: zenlayer.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: zenlayer.arcvpn.my.id
+    udp: true
+
+  - name: zenlayer.arcvpn.my.id_443 LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vless
+    uuid: 7a0db2d4-210a-4c8b-8949-8ad2154ca2f2
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: zenlayer.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: zenlayer.arcvpn.my.id
+    udp: true
+
+  - name: gb2 Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vmess
+    uuid: 6526d0d8-fd52-4d3e-9c30-49995c9bbd97
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: coba3.wesi.fun
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: coba3.wesi.fun
+    udp: true
+
+  - name: gb2 LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vmess
+    uuid: 6526d0d8-fd52-4d3e-9c30-49995c9bbd97
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: coba3.wesi.fun
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: coba3.wesi.fun
+    udp: true
+
+  - name: napolly_ws Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 80
+    type: vmess
+    uuid: d06845bb-98a2-4f5b-8b05-c682e37ee597
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sanggoro-2.patunganvps.me
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: sanggoro-2.patunganvps.me
+    udp: true
+
+  - name: napolly_ws LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 80
+    type: vmess
+    uuid: d06845bb-98a2-4f5b-8b05-c682e37ee597
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sanggoro-2.patunganvps.me
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: sanggoro-2.patunganvps.me
+    udp: true

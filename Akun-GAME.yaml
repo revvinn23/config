@@ -1,0 +1,17 @@
+proxies:
+  - name: akunssh-admin
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 80
+    type: vless
+    uuid: 020e9c96-3ac4-11ee-b3e2-0016b061439e
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: ae1-vless.tunnel.cx
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: ae1-vless.tunnel.cx
+    udp: true
