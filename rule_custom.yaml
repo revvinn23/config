@@ -1,0 +1,12 @@
+payload:
+# Bypass AdBlock
+ - DOMAIN-SUFFIX,pagead2.googlesyndication.com
+ - DOMAIN-SUFFIX,googleadservices.com
+
+# Telegram Call
+  - DST-PORT,32000
+  - DST-PORT,32001
+  - DST-PORT,32002
+  - DST-PORT,32003
+
+
