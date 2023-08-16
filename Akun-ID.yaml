@@ -1,5 +1,5 @@
 proxies:
-  - name: asddawd
+  - name: asddawd trial
     interface-name: eth1
     server: inf-1.namaserver.id
     port: 443
