@@ -1,26 +1,29 @@
 ---
 proxy-providers:
   ID:
-    type: file
+    type: http
     path: "./proxy_provider/Akun-ID.yaml"
+    url: https://raw.githubusercontent.com/revvinn23/config/main/Akun-ID.yaml
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
-      interval: 180
+      interval: 300
   SG:
-    type: file
+    type: http
     path: "./proxy_provider/Akun-SG.yaml"
+    url: https://raw.githubusercontent.com/revvinn23/config/main/Akun-SG.yaml
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
-      interval: 180
+      interval: 300
   GAME:
-    type: file
+    type: http
     path: "./proxy_provider/Akun-GAME.yaml"
+    url: https://raw.githubusercontent.com/revvinn23/config/main/Akun-GAME.yaml
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
-      interval: 180
+      interval: 300
 proxy-groups:
 - name: Jalur ID
   type: load-balance
@@ -436,14 +439,20 @@ rules:
 - RULE-SET,rule_umum,Koneksi Umum
 rule-providers:
   rule_direct:
-    type: file
+    type: http
     behavior: classical
     path: "./rule_provider/rule_direct.yaml"
+    url: https://raw.githubusercontent.com/revvinn23/config/main/rule_direct.yaml
+    interval: 3600
   rule_custom:
-    type: file
+    type: http
     behavior: classical
     path: "./rule_provider/rule_custom.yaml"
+    url: https://raw.githubusercontent.com/revvinn23/config/main/rule_custom.yaml
+    interval: 3600
   rule_umum:
-    type: file
+    type: http
     behavior: classical
     path: "./rule_provider/rule_umum.yaml"
+    url: https://raw.githubusercontent.com/revvinn23/config/main/rule_umum.yaml
+    interval: 3600
