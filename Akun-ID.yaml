@@ -325,7 +325,7 @@ proxies:
   - name: napolly_ws Halo
     interface-name: eth1
     server: 104.16.53.111
-    port: 55
+    port: 69
     type: vmess
     uuid: d06845bb-98a2-4f5b-8b05-c682e37ee597
     alterId: 0
@@ -343,7 +343,7 @@ proxies:
   - name: napolly_ws LiveON
     interface-name: wwan0
     server: 104.21.8.121
-    port: 55
+    port: 69
     type: vmess
     uuid: d06845bb-98a2-4f5b-8b05-c682e37ee597
     alterId: 0
