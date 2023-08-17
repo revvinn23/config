@@ -1,40 +1,5 @@
 proxies:
-  - name: amazon.arcvpn.my.id_vmess_ws_tls Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 443
-    type: vmess
-    uuid: f3e19b06-7a11-491e-8c51-aa9a401af0e7
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: amazon.arcvpn.my.id
-    network: ws
-    ws-opts:
-      path: /vmess/
-      headers:
-        Host: amazon.arcvpn.my.id
-    udp: true
-    
-  - name: amazon.arcvpn.my.id_vmess_ws_tls LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vmess
-    uuid: f3e19b06-7a11-491e-8c51-aa9a401af0e7
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: amazon.arcvpn.my.id
-    network: ws
-    ws-opts:
-      path: /vmess/
-      headers:
-        Host: amazon.arcvpn.my.id
-    udp: true
-    
+   
   - name: dc.vpnwuzz.com_tls_WS_direct_vmess Halo
     interface-name: eth1
     server: 104.16.53.111
