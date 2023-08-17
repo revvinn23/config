@@ -332,12 +332,12 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: sanggoro-2.patunganvps.me
+    servername: sanggoro-2.patunganvps.my.id
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: sanggoro-2.patunganvps.me
+        Host: sanggoro-2.patunganvps.my.id
     udp: true
 
   - name: napolly_ws LiveON
@@ -350,10 +350,10 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: sanggoro-2.patunganvps.me
+    servername: sanggoro-2.patunganvps.my.id
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: sanggoro-2.patunganvps.me
+        Host: sanggoro-2.patunganvps.my.id
     udp: true
