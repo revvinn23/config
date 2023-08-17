@@ -696,12 +696,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: melbi-6.patunganvps.me
+    servername: melbi-6.patunganvps.id
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: melbi-6.patunganvps.me
+        Host: melbi-6.patunganvps.id
     udp: true
 
   - name: Melbi LiveON
@@ -714,12 +714,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: melbi-6.patunganvps.me
+    servername: melbi-6.patunganvps.id
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: melbi-6.patunganvps.me
+        Host: melbi-6.patunganvps.my.id
     udp: true
 
   - name: do 443 Halo
