@@ -207,18 +207,13 @@ dns:
   listen: 0.0.0.0:7874
   ipv6: false
   prefer-h3: false
-  default-nameserver:
-  - 1.1.1.1
-  - 1.0.0.1
-  - 8.8.8.8
-  - 8.8.4.4
-  - 192.168.8.1
+   default-nameserver:
+  - 9.9.9.9
+  - 149.112.112.112
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   nameserver:
-  - 1.1.1.1
-  - 8.8.8.8
-  - 9.9.9.9
+  - https://dns.quad9.net/dns-query
   nameserver-policy:
     geosite:rule-indo:
     - 1.0.0.1
