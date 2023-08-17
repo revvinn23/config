@@ -117,12 +117,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: beon.patunganvps.me
+    servername: beon.patunganvps.my.id
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: beon.patunganvps.me
+        Host: beon.patunganvps.my.id
     udp: true
 
 
@@ -136,12 +136,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: beon.patunganvps.me
+    servername: beon.patunganvps.my.id
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: beon.patunganvps.me
+        Host: beon.patunganvps.my.id
     udp: true
 
   - name: madsomplak_ws Halo
