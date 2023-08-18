@@ -1,17 +1,17 @@
 proxies:
-  - name: akunssh-admin
-    interface-name: wwan0
-    server: 104.21.8.121
+  - name: SG+VMESS-WS NTLS(2023-08-25)
+    server: ""
     port: 80
-    type: vless
-    uuid: 020e9c96-3ac4-11ee-b3e2-0016b061439e
+    type: vmess
+    uuid: 509f71a0-3dd2-11ee-8a34-1239d0255272
+    alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: ae1-vless.tunnel.cx
+    servername: sg3.socifiles.com
     network: ws
     ws-opts:
-      path: /vless
+      path: /vmws
       headers:
-        Host: ae1-vless.tunnel.cx
+        Host: sg3.socifiles.com
     udp: true
