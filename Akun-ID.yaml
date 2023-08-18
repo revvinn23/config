@@ -286,42 +286,6 @@ proxies:
         Host: zenlayer.arcvpn.my.id
     udp: true
 
-  - name: gb2 Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 443
-    type: vmess
-    uuid: 6526d0d8-fd52-4d3e-9c30-49995c9bbd97
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: coba3.wesi.fun
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: coba3.wesi.fun
-    udp: true
-
-  - name: gb2 LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vmess
-    uuid: 6526d0d8-fd52-4d3e-9c30-49995c9bbd97
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: coba3.wesi.fun
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: coba3.wesi.fun
-    udp: true
-
   - name: napolly_ws Halo
     interface-name: eth1
     server: 104.16.53.111
