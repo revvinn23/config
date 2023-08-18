@@ -1,5 +1,40 @@
 proxies:
-   
+  - name: pagiGAN WS (CDN) TLS Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vmess
+    uuid: 5be71322-39e4-46fe-9701-a797d537bdd3
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vip.ultrassh.my.id
+    network: ws
+    ws-opts:
+      path: /whatever/vmess
+      headers:
+        Host: vip.ultrassh.my.id
+    udp: true
+    
+  - name: pagiGAN WS (CDN) TLS LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vmess
+    uuid: 5be71322-39e4-46fe-9701-a797d537bdd3
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vip.ultrassh.my.id
+    network: ws
+    ws-opts:
+      path: /whatever/vmess
+      headers:
+        Host: vip.ultrassh.my.id
+    udp: true
+    
   - name: dc.vpnwuzz.com_tls_WS_direct_vmess Halo
     interface-name: eth1
     server: 104.16.53.111
