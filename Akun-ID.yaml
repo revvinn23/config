@@ -144,42 +144,6 @@ proxies:
         Host: beon.patunganvps.my.id
     udp: true
 
-  - name: madsomplak_ws Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 443
-    type: vmess
-    uuid: 66c3ced8-bbbd-40ca-ba4f-682cb3a2a699
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: atharva.lunoxx.gay
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: atharva.lunoxx.gay
-    udp: true
-
-  - name: madsomplak_ws LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vmess
-    uuid: 66c3ced8-bbbd-40ca-ba4f-682cb3a2a699
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: atharva.lunoxx.gay
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: atharva.lunoxx.gay
-    udp: true
-
   - name: natawsvmess Halo
     interface-name: eth1
     server: 104.16.53.111
