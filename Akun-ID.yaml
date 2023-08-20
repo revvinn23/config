@@ -1,4 +1,40 @@
 proxies:
+  - name: vmess_ws_https_upgradeserver_VVIP Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vmess
+    uuid: 6fda6bc6-fe88-40ec-a733-d93625a7f02a
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: jala.iptunnels.com
+    network: ws
+    ws-opts:
+      path: /buy-vmess-ws-pm-telegram-at-synricha
+      headers:
+        Host: jala.iptunnels.com
+    udp: true
+    
+  - name: vmess_ws_https_upgradeserver_VVIP LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vmess
+    uuid: 6fda6bc6-fe88-40ec-a733-d93625a7f02a
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: jala.iptunnels.com
+    network: ws
+    ws-opts:
+      path: /buy-vmess-ws-pm-telegram-at-synricha
+      headers:
+        Host: jala.iptunnels.com
+    udp: true
+    
   - name: revvin Halo
     interface-name: eth1
     server: 104.16.53.111
@@ -33,7 +69,7 @@ proxies:
         Host: gcp.kartolo.cloud
     udp: true 
     
-  - name: https://join.iptunnels.com/ Halo
+  - name: join.iptunnels.com Halo
     interface-name: eth1
     server: 104.16.53.111
     port: 80
@@ -50,7 +86,7 @@ proxies:
         Host: jala.iptunnels.com
     udp: true
     
-  - name: https://join.iptunnels.com/ LiveON
+  - name: join.iptunnels.com LiveON
     interface-name: wwan0
     server: 104.21.8.121
     port: 80
