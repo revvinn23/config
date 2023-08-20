@@ -106,6 +106,10 @@ proxy-groups:
 - name: Koneksi Umum
   type: fallback
   lazy: false
+  use:
+    - ID
+    - SG
+    - GAME
   proxies:
   - Jalur SG
   - Jalur ID
@@ -124,6 +128,10 @@ proxy-groups:
 - name: Koneksi Streaming
   type: fallback
   lazy: false
+  use:
+    - ID
+    - SG
+    - GAME
   proxies:
   - Jalur SG
   - Jalur ID
@@ -133,6 +141,10 @@ proxy-groups:
 - name: Koneksi Sosmed
   type: fallback
   lazy: false
+  use:
+    - ID
+    - SG
+    - GAME
   proxies:
   - Jalur ID
   - Jalur SG
