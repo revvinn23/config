@@ -1,5 +1,22 @@
 proxies:
-  - name: revvin
+  - name: revvin Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 80
+    type: vless
+    uuid: 21c41908-df3a-4521-bf39-50ff837210e3
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: gcp.kartolo.cloud
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: gcp.kartolo.cloud
+    udp: true 
+    
+  - name: revvin LiveON
     interface-name: wwan0
     server: 104.21.8.121
     port: 80
@@ -14,22 +31,41 @@ proxies:
       path: /vless
       headers:
         Host: gcp.kartolo.cloud
+    udp: true 
+    
+  - name: https://join.iptunnels.com/ Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 80
+    type: vless
+    uuid: af298a5c-5fb6-48f8-82f5-754ccc9d77dd
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: jala.iptunnels.com
+    network: ws
+    ws-opts:
+      path: /buy-vless-ws-pm-telegram-at-synricha
+      headers:
+        Host: jala.iptunnels.com
     udp: true
     
-  - name: Vmess gRPC (SNI)
-    interface-name: eth1
-    server: jala.iptunnels.com
-    port: 443
-    type: vmess
-    uuid: e31f8767-c7c8-47be-8830-47cf793df281
-    alterId: 0
+  - name: https://join.iptunnels.com/ LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 80
+    type: vless
+    uuid: af298a5c-5fb6-48f8-82f5-754ccc9d77dd
     cipher: auto
-    network: grpc
-    tls: true
-    servername: www.shopee.com
+    tls: false
     skip-cert-verify: true
-    grpc-opts:
-    grpc-service-name: buy-vless-grpc-pm-telegram-at-synricha
+    servername: jala.iptunnels.com
+    network: ws
+    ws-opts:
+      path: /buy-vless-ws-pm-telegram-at-synricha
+      headers:
+        Host: jala.iptunnels.com
+    udp: true
     
   - name: doaibu Halo
     interface-name: eth1
