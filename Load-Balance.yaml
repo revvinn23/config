@@ -466,3 +466,11 @@ rule-providers:
     path: "./rule_provider/rule_umum.yaml"
     url: https://raw.githubusercontent.com/revvinn23/config/main/rule_umum.yaml
     interval: 3600
+tun:
+  enable: true
+  stack: system
+  device: utun
+  auto-route: false
+  auto-detect-interface: false
+  dns-hijack:
+  - tcp://any:53
