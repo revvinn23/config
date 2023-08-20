@@ -1,4 +1,40 @@
 proxies:
+  - name: naravpncom Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 80
+    type: vmess
+    uuid: 049f36ca-85d9-41f7-874f-3449face117f
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: id2.zevesh.host
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id2.zevesh.host
+    udp: true
+    
+  - name: naravpncom LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 80
+    type: vmess
+    uuid: 049f36ca-85d9-41f7-874f-3449face117f
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: id2.zevesh.host
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id2.zevesh.host
+    udp: true
+    
   - name: vmess_ws_https_upgradeserver_VVIP Halo
     interface-name: eth1
     server: 104.16.53.111
