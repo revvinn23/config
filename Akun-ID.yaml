@@ -1,14 +1,15 @@
 proxies:
   - name: Vmess gRPC (SNI)
-    server: SERVER.COM
+    interface-name: eth1
+    server: jala.iptunnels.com
     port: 443
     type: vmess
-    uuid: UUID
+    uuid: e31f8767-c7c8-47be-8830-47cf793df281
     alterId: 0
     cipher: auto
     network: grpc
     tls: true
-    servername: 
+    servername: www.shopee.com
     skip-cert-verify: true
     grpc-opts:
     grpc-service-name: buy-vless-grpc-pm-telegram-at-synricha
