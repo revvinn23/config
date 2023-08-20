@@ -107,9 +107,9 @@ proxy-groups:
   type: fallback
   lazy: false
   use:
-    - ID
-    - SG
-    - GAME
+  - ID
+  - SG
+  - GAME
   proxies:
   - Jalur SG
   - Jalur ID
@@ -129,9 +129,9 @@ proxy-groups:
   type: fallback
   lazy: false
   use:
-    - ID
-    - SG
-    - GAME
+  - ID
+  - SG
+  - GAME
   proxies:
   - Jalur SG
   - Jalur ID
@@ -142,9 +142,9 @@ proxy-groups:
   type: fallback
   lazy: false
   use:
-    - ID
-    - SG
-    - GAME
+  - ID
+  - SG
+  - GAME
   proxies:
   - Jalur ID
   - Jalur SG
@@ -154,9 +154,9 @@ proxy-groups:
 - name: Speedtest
   type: select
   use:
-    - ID
-    - SG
-    - GAME
+  - ID
+  - SG
+  - GAME
   proxies:
   - Jalur ID
   - Jalur SG
@@ -164,11 +164,11 @@ proxy-groups:
 - name: Custom
   type: select
   use:
-    - ID
-    - SG
-    - GAME
+  - ID
+  - SG
+  - GAME
   proxies:
-    - PASS
+  - PASS
 port: 7890
 socks-port: 7891
 mixed-port: 7893
@@ -219,7 +219,7 @@ dns:
   listen: 0.0.0.0:7874
   ipv6: false
   prefer-h3: false
-   default-nameserver:
+  default-nameserver:
   - 9.9.9.9
   - 149.112.112.112
   enhanced-mode: fake-ip
