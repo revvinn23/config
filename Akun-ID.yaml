@@ -1,4 +1,21 @@
 proxies:
+  - name: revvin
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 80
+    type: vless
+    uuid: 21c41908-df3a-4521-bf39-50ff837210e3
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: gcp.kartolo.cloud
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: gcp.kartolo.cloud
+    udp: true
+    
   - name: Vmess gRPC (SNI)
     interface-name: eth1
     server: jala.iptunnels.com
