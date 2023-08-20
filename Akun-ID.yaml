@@ -1,4 +1,18 @@
-proxies:  
+proxies:
+  - name: Vmess gRPC (SNI)
+    server: SERVER.COM
+    port: 443
+    type: vmess
+    uuid: UUID
+    alterId: 0
+    cipher: auto
+    network: grpc
+    tls: true
+    servername: 
+    skip-cert-verify: true
+    grpc-opts:
+    grpc-service-name: buy-vless-grpc-pm-telegram-at-synricha
+    
   - name: doaibu Halo
     interface-name: eth1
     server: 104.16.53.111
