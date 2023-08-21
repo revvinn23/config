@@ -221,7 +221,7 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   nameserver:
-  - https://dns.quad9.net/dns-query
+  - https://dns11.quad9.net/dns-query
   nameserver-policy:
     geosite:rule-indo:
     - 1.0.0.1
@@ -330,6 +330,8 @@ dns:
   - "*.mcdn.bilivideo.cn"
   - "+.media.dssott.com"
   - shark007.net
+  fallback:
+  - tls://dns11.quad9.net:853
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - RULE-SET,rule_direct,Koneksi Direct
