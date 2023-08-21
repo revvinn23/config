@@ -104,12 +104,8 @@ proxy-groups:
   - Jalur SG
   - Jalur ID
 - name: Koneksi Umum
-  type: select
+  type: fallback
   lazy: false
-  use:
-  - ID
-  - SG
-  - GAME
   proxies:
   - Jalur SG
   - Jalur ID
