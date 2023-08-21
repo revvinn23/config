@@ -1,4 +1,40 @@
 proxies:
+  - name: @Dunia_VPN Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vmess
+    uuid: 4c4670bd-269f-43c9-9552-6a05addc21e8
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: dc.vpnwuzz.com
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: dc.vpnwuzz.com
+    udp: true
+    
+  - name: @Dunia_VPN LivwON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vmess
+    uuid: 4c4670bd-269f-43c9-9552-6a05addc21e8
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: dc.vpnwuzz.com
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: dc.vpnwuzz.com
+    udp: true
+    
   - name: kirino.arcvpn.my.id_80 Halo
     interface-name: eth1
     server: 104.16.53.111
