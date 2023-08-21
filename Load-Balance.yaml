@@ -467,6 +467,6 @@ tun:
   stack: system
   device: utun
   auto-route: false
-  auto-detect-interface: false
+  auto-detect-interface: true
   dns-hijack:
   - tcp://any:53
