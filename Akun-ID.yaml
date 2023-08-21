@@ -1,4 +1,38 @@
 proxies:
+  - name: revvin Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 80
+    type: vless
+    uuid: 0c887398-153a-4536-8f4c-c00eb3f88e18
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: gcp.kartolo.cloud
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: gcp.kartolo.cloud
+    udp: true
+    
+  - name: revvin LiveON
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 80
+    type: vless
+    uuid: 0c887398-153a-4536-8f4c-c00eb3f88e18
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: gcp.kartolo.cloud
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: gcp.kartolo.cloud
+    udp: true
+    
   - name: VMESS_WS_NTLS_ID_NUSA adawd
     interface-name: wwan0
     server: 104.21.8.121
@@ -52,40 +86,6 @@ proxies:
       headers:
         Host: jala.iptunnels.com
     udp: true
-    
-  - name: revvin Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 80
-    type: vless
-    uuid: 0c887398-153a-4536-8f4c-c00eb3f88e18
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: gcp.kartolo.cloud
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        Host: gcp.kartolo.cloud
-    udp: true 
-    
-  - name: revvin LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 80
-    type: vless
-    uuid: 0c887398-153a-4536-8f4c-c00eb3f88e18
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: gcp.kartolo.cloud
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        Host: gcp.kartolo.cloud
-    udp: true 
     
   - name: join.iptunnels.com Halo
     interface-name: eth1
