@@ -1,4 +1,40 @@
 proxies:
+  - name: ALFVPN_BANSOS Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 80
+    type: vmess
+    uuid: 04414f0a-22ce-4354-a7f3-72daaa91d21a
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: linode.takbebeh.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: linode.takbebeh.my.id
+    udp: true
+    
+  - name: ALFVPN_BANSOS LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 80
+    type: vmess
+    uuid: 04414f0a-22ce-4354-a7f3-72daaa91d21a
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: linode.takbebeh.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: linode.takbebeh.my.id
+    udp: true
+    
   - name: jembut Halo
     interface-name: eth1
     server: 104.16.53.111
