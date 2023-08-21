@@ -58,7 +58,7 @@ proxies:
     server: 104.16.53.111
     port: 80
     type: vless
-    uuid: 21c41908-df3a-4521-bf39-50ff837210e3
+    uuid: 0c887398-153a-4536-8f4c-c00eb3f88e18
     cipher: auto
     tls: false
     skip-cert-verify: true
@@ -75,7 +75,7 @@ proxies:
     server: 104.21.8.121
     port: 80
     type: vless
-    uuid: 21c41908-df3a-4521-bf39-50ff837210e3
+    uuid: 0c887398-153a-4536-8f4c-c00eb3f88e18
     cipher: auto
     tls: false
     skip-cert-verify: true
