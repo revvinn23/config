@@ -34,41 +34,7 @@ proxies:
       headers:
         Host: linode.takbebeh.my.id
     udp: true
-    
-  - name: jembut Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 80
-    type: vless
-    uuid: 0cda7261-05d7-48e9-b26b-26b0097b0294
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: lightsail.arcvpn.my.id
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        Host: lightsail.arcvpn.my.id
-    udp: true
-    
-  - name: jembut LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 80
-    type: vless
-    uuid: 0cda7261-05d7-48e9-b26b-26b0097b0294
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: lightsail.arcvpn.my.id
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        Host: lightsail.arcvpn.my.id
-    udp: true
-    
+       
   - name: Dunia_VPN Halo
     interface-name: eth1
     server: 104.16.53.111
