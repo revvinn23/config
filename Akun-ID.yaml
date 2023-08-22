@@ -45,7 +45,7 @@ proxies:
     servername: gcp.kartolo.cloud
     network: ws
     ws-opts:
-      path: /vless
+      path: /vlessws
       headers:
         Host: gcp.kartolo.cloud
     udp: true
@@ -62,7 +62,7 @@ proxies:
     servername: gcp.kartolo.cloud
     network: ws
     ws-opts:
-      path: /vless
+      path: /vlessws
       headers:
         Host: gcp.kartolo.cloud
     udp: true
