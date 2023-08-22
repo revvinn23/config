@@ -1,4 +1,38 @@
 proxies:
+  - name: revvin_ws Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 8880
+    type: vless
+    uuid: 229a3067-51cc-4a6c-9089-ef3cc15b92c5
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: gcp.kartolo.cloud
+    network: ws
+    ws-opts:
+      path: /vlessws
+      headers:
+        Host: gcp.kartolo.cloud
+    udp: true
+    
+  - name: revvin_ws LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 8880
+    type: vless
+    uuid: 229a3067-51cc-4a6c-9089-ef3cc15b92c5
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: gcp.kartolo.cloud
+    network: ws
+    ws-opts:
+      path: /vlessws
+      headers:
+        Host: gcp.kartolo.cloud
+    udp: true
+    
   - name: zimaBoard_VVIP_HTTP Halo
     interface-name: eth1
     server: 104.16.53.111
@@ -33,40 +67,6 @@ proxies:
         Host: runcloud-bgn.apasih.id
     udp: true
     
-  - name: revvin_ws Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 8880
-    type: vless
-    uuid: 229a3067-51cc-4a6c-9089-ef3cc15b92c5
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: ""
-    network: ws
-    ws-opts:
-      path: /vlessws
-      headers:
-        Host: gcp.kartolo.cloud
-    udp: true
-    
-  - name: revvin_ws LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 8880
-    type: vless
-    uuid: 229a3067-51cc-4a6c-9089-ef3cc15b92c5
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: ""
-    network: ws
-    ws-opts:
-      path: /vlessws
-      headers:
-        Host: gcp.kartolo.cloud
-    udp: true
-       
   - name: vmess_ws_https_upgradeserver_VVIP Halo
     interface-name: eth1
     server: 104.16.53.111
