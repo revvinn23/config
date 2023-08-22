@@ -36,7 +36,7 @@ proxies:
   - name: revvin Halo
     interface-name: eth1
     server: 104.16.53.111
-    port: 80
+    port: 8880
     type: vless
     uuid: 229a3067-51cc-4a6c-9089-ef3cc15b92c5
     cipher: auto
@@ -53,7 +53,7 @@ proxies:
   - name: revvin LiveON
     interface-name: wwan0
     server: 104.21.8.121
-    port: 80
+    port: 8880
     type: vless
     uuid: 229a3067-51cc-4a6c-9089-ef3cc15b92c5
     cipher: auto
