@@ -33,24 +33,6 @@ proxies:
         Host: gcp.kartolo.cloud
     udp: true
     
-  - name: wangydanPink
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 80
-    type: vmess
-    uuid: d92bbd5a-20ad-4f4a-af98-c43a8ba14642
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: id.wrwb.dev
-    network: ws
-    ws-opts:
-      path: /wibu
-      headers:
-        Host: id.wrwb.dev
-    udp: true
-    
   - name: zimaBoard_VVIP_HTTP Halo
     interface-name: eth1
     server: 104.16.53.111
