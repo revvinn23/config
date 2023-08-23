@@ -1,34 +1,34 @@
 proxies:   
-  - name: join.iptunnels.com Halo Game
+  - name: zimaBoard_VVIP_HTTP Halo Game
     interface-name: eth1
     server: 104.16.53.111
     port: 80
     type: vless
-    uuid: af298a5c-5fb6-48f8-82f5-754ccc9d77dd
+    uuid: 0dc4eef0-4aca-48b5-af73-7e299333fd87
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: jala.iptunnels.com
+    servername: runcloud-bgn.apasih.id
     network: ws
     ws-opts:
       path: /buy-vless-ws-pm-telegram-at-synricha
       headers:
-        Host: jala.iptunnels.com
+        Host: runcloud-bgn.apasih.id
     udp: true
     
-  - name: join.iptunnels.com LiveON Game
+  - name: zimaBoard_VVIP_HTTP LiveON Game
     interface-name: wwan0
     server: 104.21.8.121
     port: 80
     type: vless
-    uuid: af298a5c-5fb6-48f8-82f5-754ccc9d77dd
+    uuid: 0dc4eef0-4aca-48b5-af73-7e299333fd87
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: jala.iptunnels.com
+    servername: runcloud-bgn.apasih.id
     network: ws
     ws-opts:
       path: /buy-vless-ws-pm-telegram-at-synricha
       headers:
-        Host: jala.iptunnels.com
+        Host: runcloud-bgn.apasih.id
     udp: true
