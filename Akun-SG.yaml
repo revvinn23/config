@@ -788,39 +788,6 @@ proxies:
         Host: oracle.arcvpn.my.id
     udp: true
 
-  - name: azure 443 Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 443
-    type: vless
-    uuid: 71ec9578-4550-468a-9723-5b65e44a6443
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: azure.arcvpn.my.id
-    network: ws
-    ws-opts:
-      path: /2048
-      headers:
-        Host: azure.arcvpn.my.id
-    udp: true
-
-  - name: azure 443 LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vless
-    uuid: 71ec9578-4550-468a-9723-5b65e44a6443
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: azure.arcvpn.my.id
-    network: ws
-    ws-opts:
-      path: /2048
-      headers:
-        Host: azure.arcvpn.my.id
-    udp: true
 
   - name: m247.arcvpn.my.id_443 Halo
     interface-name: eth1
