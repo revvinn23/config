@@ -214,39 +214,6 @@ proxies:
         Host: ruma.wesi.fun
     udp: true
 
-  - name: zenlayer.arcvpn.my.id_443 Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 443
-    type: vless
-    uuid: 7a0db2d4-210a-4c8b-8949-8ad2154ca2f2
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: zenlayer.arcvpn.my.id
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: zenlayer.arcvpn.my.id
-    udp: true
-
-  - name: zenlayer.arcvpn.my.id_443 LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vless
-    uuid: 7a0db2d4-210a-4c8b-8949-8ad2154ca2f2
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: zenlayer.arcvpn.my.id
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: zenlayer.arcvpn.my.id
-    udp: true
 
   - name: napolly_ws Halo
     interface-name: eth1
