@@ -754,40 +754,6 @@ proxies:
         Host: lightnode.arcvpn.my.id
     udp: true
 
-  - name: oracle 443 LiveON
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 443
-    type: vless
-    uuid: 326d95cb-da4f-40fc-a04e-3f9e04a4c7cb
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: oracle.arcvpn.my.id
-    network: ws
-    ws-opts:
-      path: /2048
-      headers:
-        Host: oracle.arcvpn.my.id
-    udp: true
-
-  - name: oracle 443 LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vless
-    uuid: 326d95cb-da4f-40fc-a04e-3f9e04a4c7cb
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: oracle.arcvpn.my.id
-    network: ws
-    ws-opts:
-      path: /2048
-      headers:
-        Host: oracle.arcvpn.my.id
-    udp: true
-
 
   - name: m247.arcvpn.my.id_443 Halo
     interface-name: eth1
