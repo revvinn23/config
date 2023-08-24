@@ -1,4 +1,38 @@
 proxies:
+  - name: neon.arcvpn.my.id_http_WS_direct_vless Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 80
+    type: vless
+    uuid: 2515e753-cb15-40e6-9bea-10e9ab19b627
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: neon.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /vless/
+      headers:
+        Host: neon.arcvpn.my.id
+    udp: true
+    
+  - name: neon.arcvpn.my.id_http_WS_direct_vless LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 80
+    type: vless
+    uuid: 2515e753-cb15-40e6-9bea-10e9ab19b627
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: neon.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /vless/
+      headers:
+        Host: neon.arcvpn.my.id
+    udp: true
+    
   - name: HERZA SG Halo
     interface-name: eth1
     server: 104.16.53.111
