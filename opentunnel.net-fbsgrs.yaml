@@ -79,28 +79,10 @@ proxies:
       headers:
         Host: herza-SG.wibu-xray.com
     udp: true
-    
-  - name: ALFVPN_BANSOS
-    server: 104.21.8.121
-    port: 80
-    type: vmess
-    uuid: 04414f0a-22ce-4354-a7f3-72daaa91d21a
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: linode.takbebeh.my.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: linode.takbebeh.my.id
-    udp: true
 proxy-groups:
   - name: OPENTUNNEL
     type: select
     proxies:
-      - ALFVPN_BANSOS
       - HERZA SG LiveON
       - vmesrm LiveON
       - herza 443 LiveON
