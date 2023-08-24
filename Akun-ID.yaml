@@ -1,4 +1,18 @@
 proxies:
+  - name: opentunnel.net-fsefsf
+    interface-name: eth1
+    type: wireguard
+    server: www.shopee.com.wg-id-2.opensvr.net
+    port: 51820
+    ip: 10.7.0.33
+    private-key: mOzrkHeipuYqESLU3Odi6VYogK6AYS6myX/Sen5d32k=
+    public-key: R9a1TAQO2FZmPbrh/IsZDkesF2cuqBTb1R7SDZwJ4Dg=
+    dns:
+    - 1.1.1.1
+    - 1.0.0.1
+    mtu: 1420
+    udp: true
+
   - name: opentunnel.net-instiki Halo
     interface-name: eth1
     server: 104.16.53.111
