@@ -2,20 +2,21 @@ proxies:
   - name: opentunnel.net-fbsgrs
     interface-name: wwan0
     server: 104.21.8.121
-    port: 443
+    port: 80
     type: vmess
     uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
     alterId: 16
     cipher: auto
-    tls: true
+    tls: false
     skip-cert-verify: true
+    servername: idv-3.openv2ray.com
     network: ws
     ws-opts:
       path: /u/opentunnel.net-fbsgrs
       headers:
         Host: idv-3.openv2ray.com
     udp: true
-
+    
   - name: Jala IPTUNNELS Halo
     interface-name: eth1
     server: 104.16.53.111
