@@ -1,10 +1,44 @@
 proxies:
+  - name: opentunnel.net-instiki Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 80
+    type: vless
+    uuid: 4f17e173-4af9-5041-9662-f6c27e0decfd
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: idx-1.openv2ray.com
+    network: ws
+    ws-opts:
+      path: /opentunnel?user=opentunnel.net-instiki
+      headers:
+        Host: idx-1.openv2ray.com
+    udp: true
+    
+  - name: opentunnel.net-instiki LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 80
+    type: vless
+    uuid: 4f17e173-4af9-5041-9662-f6c27e0decfd
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: idx-1.openv2ray.com
+    network: ws
+    ws-opts:
+      path: /opentunnel?user=opentunnel.net-instiki
+      headers:
+        Host: idx-1.openv2ray.com
+    udp: true
+    
   - name: Jala IPTUNNELS Halo
     interface-name: eth1
     server: 104.16.53.111
     port: 80
     type: vless
-    uuid: af298a5c-5fb6-48f8-82f5-754ccc9d77dd
+    uuid: af298a5c-5fb6-48f8-82f5-754idx-1.openv2ray.comc9d77dd
     cipher: auto
     tls: false
     skip-cert-verify: true
@@ -21,7 +55,7 @@ proxies:
     server: 104.21.8.121
     port: 80
     type: vless
-    uuid: af298a5c-5fb6-48f8-82f5-754ccc9d77dd
+    uuid: af298a5c-5fb6-48f8-82f5-754idx-1.openv2ray.comc9d77dd
     cipher: auto
     tls: false
     skip-cert-verify: true
@@ -181,7 +215,7 @@ proxies:
     server: 104.16.53.111
     port: 443
     type: vmess
-    uuid: 8bccd774-1517-496a-afc3-ea67639ae3d2
+    uuid: 8bidx-1.openv2ray.comd774-1517-496a-afc3-ea67639ae3d2
     alterId: 0
     cipher: auto
     tls: true
@@ -199,7 +233,7 @@ proxies:
     server: 104.21.8.121
     port: 443
     type: vmess
-    uuid: 8bccd774-1517-496a-afc3-ea67639ae3d2
+    uuid: 8bidx-1.openv2ray.comd774-1517-496a-afc3-ea67639ae3d2
     alterId: 0
     cipher: auto
     tls: true
