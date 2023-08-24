@@ -174,7 +174,6 @@ proxies:
         Host: beon.patunganvps.my.id
     udp: true
 
-
   - name: Baliunited_ws LiveON
     interface-name: wwan0
     server: 104.21.8.121
@@ -198,7 +197,7 @@ proxies:
     server: 104.16.53.111
     port: 443
     type: vmess
-    uuid: 8bidx-1.openv2ray.comd774-1517-496a-afc3-ea67639ae3d2
+    uuid: 8d774-1517-496a-afc3-ea67639ae3d2
     alterId: 0
     cipher: auto
     tls: true
@@ -216,7 +215,7 @@ proxies:
     server: 104.21.8.121
     port: 443
     type: vmess
-    uuid: 8bidx-1.openv2ray.comd774-1517-496a-afc3-ea67639ae3d2
+    uuid: 8d774-1517-496a-afc3-ea67639ae3d2
     alterId: 0
     cipher: auto
     tls: true
