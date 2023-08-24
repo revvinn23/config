@@ -1,19 +1,4 @@
 proxies:
-	- name: fhshdrz
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: trojan
-    password: 29e50955-dba4-4b2e-b86e-6931b2123eb1
-    skip-cert-verify: true
-    sni: inf-1.namaserver.id
-    network: ws
-    ws-opts:
-      path: /trojan-ws
-      headers:
-        Host: inf-1.namaserver.id
-    udp: true
-    
   - name: Jala IPTUNNELS Halo
     interface-name: eth1
     server: 104.16.53.111
