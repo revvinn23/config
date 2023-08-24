@@ -1,5 +1,5 @@
 proxies:
-  - name: fhshdrz
+	- name: fhshdrz
     interface-name: wwan0
     server: 104.21.8.121
     port: 443
