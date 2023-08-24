@@ -1,4 +1,40 @@
 proxies:
+  - name: HERZA SG Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vmess
+    uuid: 217dd354-1170-485d-89f1-58c639890376
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: herza-SG.wibu-xray.com
+    network: ws
+    ws-opts:
+      path: /WIBU
+      headers:
+        Host: herza-SG.wibu-xray.com
+    udp: true
+
+  - name: HERZA SG LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vmess
+    uuid: 217dd354-1170-485d-89f1-58c639890376
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: herza-SG.wibu-xray.com
+    network: ws
+    ws-opts:
+      path: /WIBU
+      headers:
+        Host: herza-SG.wibu-xray.com
+    udp: true
+    
   - name: Dunia_VPN Halo
     interface-name: eth1
     server: 104.16.53.111
