@@ -1,6 +1,6 @@
 proxies:
-  - name: Vless gRPC (SNI) LiveON
-    interface-name: wwan0
+  - name: Vless gRPC (SNI) Halo
+    interface-name: eth1
     server: jala.iptunnels.com
     port: 443
     type: vless
@@ -8,7 +8,7 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: zendesk1.spotify.com
+    servername: www.shopee.com
     network: grpc
     grpc-opts:
     grpc-mode: gun
