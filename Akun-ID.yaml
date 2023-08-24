@@ -1,19 +1,19 @@
 proxies:
-  - name: opentunnel.net-rio
+  - name: opentunnel.net-fbsgrs
     interface-name: wwan0
     server: 104.21.8.121
     port: 443
-    type: vless
-    uuid: 4f17e173-4af9-5041-9662-f6c27e0decfd
+    type: vmess
+    uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
+    alterId: 16
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: sgx-3.openv2ray.com
     network: ws
     ws-opts:
-      path: /u/opentunnel.net-rio
+      path: /u/opentunnel.net-fbsgrs
       headers:
-        Host: sgx-3.openv2ray.com
+        Host: idv-3.openv2ray.com
     udp: true
 
   - name: Jala IPTUNNELS Halo
