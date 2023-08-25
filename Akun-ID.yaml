@@ -11,7 +11,7 @@ proxies:
     servername: runcloud-bgn.apasih.id
     network: ws
     ws-opts:
-      path: /buy-vless-ws-pm-telegram-at-synricha
+      path: /buy-vless-ws-pm-telegram-at-synricha?ed=2048
       headers:
         Host: runcloud-bgn.apasih.id
     udp: true
@@ -28,7 +28,7 @@ proxies:
     servername: runcloud-bgn.apasih.id
     network: ws
     ws-opts:
-      path: /buy-vless-ws-pm-telegram-at-synricha
+      path: /buy-vless-ws-pm-telegram-at-synricha?ed=2048
       headers:
         Host: runcloud-bgn.apasih.id
     udp: true
