@@ -31,6 +31,8 @@ proxies:
       path: /vless/
       headers:
         Host: neon.arcvpn.my.id
+      max-early-data: 2048
+      early-data-header-name: Sec-WebSocket-Protocol
     udp: true
     
   - name: HERZA SG Halo
