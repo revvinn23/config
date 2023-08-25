@@ -14,8 +14,6 @@ proxies:
       path: /buy-vless-ws-pm-telegram-at-synricha
       headers:
         Host: jala.iptunnels.com
-      max-early-data: 2048
-      early-data-header-name: Sec-WebSocket-Protocol
     udp: true
     
   - name: Jala IPTUNNELS LiveON Game
@@ -33,8 +31,6 @@ proxies:
       path: /buy-vless-ws-pm-telegram-at-synricha
       headers:
         Host: jala.iptunnels.com
-      max-early-data: 2048
-      early-data-header-name: Sec-WebSocket-Protocol
     udp: true
     
   - name: zimaBoard_VVIP_HTTP Halo Game
@@ -52,8 +48,6 @@ proxies:
       path: /buy-vless-ws-pm-telegram-at-synricha
       headers:
         Host: runcloud-bgn.apasih.id
-      max-early-data: 2048
-      early-data-header-name: Sec-WebSocket-Protocol
     udp: true
     
   - name: zimaBoard_VVIP_HTTP LiveON Game
@@ -71,6 +65,4 @@ proxies:
       path: /buy-vless-ws-pm-telegram-at-synricha
       headers:
         Host: runcloud-bgn.apasih.id
-      max-early-data: 2048
-      early-data-header-name: Sec-WebSocket-Protocol
     udp: true
