@@ -1,4 +1,21 @@
 proxies:
+  - name: yyhiutty_vless_ws_tls Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: cfd454d2-276f-48b5-9fa1-c5208be13d99
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ums-id01.ipxray.xyz
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: ums-id01.ipxray.xyz
+    udp: true
+
   - name: yyhiutty_vless_ws_tls LiveOn
     interface-name: wwan0
     server: 104.21.8.121
