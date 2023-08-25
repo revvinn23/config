@@ -177,43 +177,6 @@ proxies:
         Host: nata.wesi.fun
     udp: true
 
-  - name: vmesrm Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 80
-    type: vmess
-    uuid: e1a72034-954b-4cb6-81d2-f83dab00ddb5
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: ruma.wesi.fun
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: ruma.wesi.fun
-    udp: true
-
-  - name: vmesrm LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 80
-    type: vmess
-    uuid: e1a72034-954b-4cb6-81d2-f83dab00ddb5
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: ruma.wesi.fun
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: ruma.wesi.fun
-    udp: true
-
-
   - name: napolly_ws Halo
     interface-name: eth1
     server: 104.16.53.111
