@@ -143,6 +143,586 @@ proxies:
         Host: melbi-6.patunganvps.my.id
     udp: true
 
+  - name: neon.arcvpn.my.id_http_WS_direct_vless Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 80
+    type: vless
+    uuid: 2515e753-cb15-40e6-9bea-10e9ab19b627
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: neon.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /vless/
+      headers:
+        Host: neon.arcvpn.my.id
+    udp: true
+    
+  - name: neon.arcvpn.my.id_http_WS_direct_vless LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 80
+    type: vless
+    uuid: 2515e753-cb15-40e6-9bea-10e9ab19b627
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: neon.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /vless/
+      headers:
+        Host: neon.arcvpn.my.id
+    udp: true
+    
+  - name: HERZA SG Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vmess
+    uuid: 217dd354-1170-485d-89f1-58c639890376
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: herza-SG.wibu-xray.com
+    network: ws
+    ws-opts:
+      path: /WIBU
+      headers:
+        Host: herza-SG.wibu-xray.com
+    udp: true
+
+  - name: HERZA SG LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vmess
+    uuid: 217dd354-1170-485d-89f1-58c639890376
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: herza-SG.wibu-xray.com
+    network: ws
+    ws-opts:
+      path: /WIBU
+      headers:
+        Host: herza-SG.wibu-xray.com
+    udp: true
+    
+  - name: colo.arcvpn.my.id_443 Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: 08281169-48cf-4895-b00c-bfbd97ca7253
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: colo.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: colo.arcvpn.my.id
+    udp: true
+
+  - name: colo.arcvpn.my.id_443 LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vless
+    uuid: 08281169-48cf-4895-b00c-bfbd97ca7253
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: colo.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: colo.arcvpn.my.id
+    udp: true
+
+  - name: fdc.arcvpn.my.id_443 Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: c97cd133-ab54-47de-ab7a-d3d364373f1c
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: fdc.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: fdc.arcvpn.my.id
+    udp: true
+
+  - name: fdc.arcvpn.my.id_443 LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vless
+    uuid: c97cd133-ab54-47de-ab7a-d3d364373f1c
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: fdc.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: fdc.arcvpn.my.id
+    udp: true
+
+  - name: net.arcvpn.my.id_443 Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: c97cd133-ab54-47de-ab7a-d3d364373f1c
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: net.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: net.arcvpn.my.id
+    udp: true
+
+  - name: net.arcvpn.my.id_443 LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vless
+    uuid: c97cd133-ab54-47de-ab7a-d3d364373f1c
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: net.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: net.arcvpn.my.id
+    udp: true
+
+  - name: quadra2.arcvpn.my.id_443 Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: 6c343aaf-9bef-4204-9b2f-7ad566fc2008
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quadra2.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: quadra2.arcvpn.my.id
+    udp: true
+
+  - name: quadra2.arcvpn.my.id_443 LiveOn
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vless
+    uuid: 6c343aaf-9bef-4204-9b2f-7ad566fc2008
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quadra2.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: quadra2.arcvpn.my.id
+    udp: true
+
+  - name: oracle3.arcvpn.my.id_tls Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: fd86173a-f6f7-4c54-b8fa-56c75fa78540
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: oracle3.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: oracle3.arcvpn.my.id
+    udp: true
+
+  - name: oracle3.arcvpn.my.id_tls LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vless
+    uuid: fd86173a-f6f7-4c54-b8fa-56c75fa78540
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: oracle3.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: oracle3.arcvpn.my.id
+    udp: true
+
+  - name: pejuang-gratisan.vpnfoundation.cloud Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: 89f6d6c8-2603-411b-b302-821aabe82e7b
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: pejuang-gratisan.vpnfoundation.cloud
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: pejuang-gratisan.vpnfoundation.cloud
+    udp: true
+
+  - name: pejuang-gratisan.vpnfoundation.cloud LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vless
+    uuid: 89f6d6c8-2603-411b-b302-821aabe82e7b
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: pejuang-gratisan.vpnfoundation.cloud
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: pejuang-gratisan.vpnfoundation.cloud
+    udp: true
+
+  - name: stack.vpnfoundation.cloud Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: e402e960-52e5-45e6-8e76-3b1aefe99bba
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: stack.vpnfoundation.cloud
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: stack.vpnfoundation.cloud
+    udp: true
+
+  - name: stack.vpnfoundation.cloud LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vless
+    uuid: e402e960-52e5-45e6-8e76-3b1aefe99bba
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: stack.vpnfoundation.cloud
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: stack.vpnfoundation.cloud
+    udp: true
+
+  - name: husky.vpnfoundation.cloud Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: 809864b4-ff69-47aa-b291-6ca7903c3602
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: husky.vpnfoundation.cloud
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: husky.vpnfoundation.cloud
+    udp: true
+
+  - name: husky.vpnfoundation.cloud LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vless
+    uuid: 809864b4-ff69-47aa-b291-6ca7903c3602
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: husky.vpnfoundation.cloud
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: husky.vpnfoundation.cloud
+    udp: true
+
+  - name: crimson.vpnfoundation.cloud Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: c4add0b9-5b1c-40fd-b4b0-1b084f0a193f
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: crimson.vpnfoundation.cloud
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: crimson.vpnfoundation.cloud
+    udp: true
+
+  - name: crimson.vpnfoundation.cloud LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vless
+    uuid: c4add0b9-5b1c-40fd-b4b0-1b084f0a193f
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: crimson.vpnfoundation.cloud
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: crimson.vpnfoundation.cloud
+    udp: true
+
+  - name: cloud.arcvpn.my.id Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: c8fbd331-258b-4718-9c1c-8ed8d99a8c5f
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: temp.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /2048
+      headers:
+        Host: temp.arcvpn.my.id
+    udp: true
+
+
+  - name: cloud.arcvpn.my.id LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vless
+    uuid: c8fbd331-258b-4718-9c1c-8ed8d99a8c5f
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: temp.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /2048
+      headers:
+        Host: temp.arcvpn.my.id
+    udp: true
+
+  - name: cloud.arcvpn.my.id Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: bfafe0c7-ba0c-4db9-8e04-653d9adc7e85
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: cloud.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /2048
+      headers:
+        Host: cloud.arcvpn.my.id
+    udp: true
+
+  - name: cloud.arcvpn.my.id LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vless
+    uuid: bfafe0c7-ba0c-4db9-8e04-653d9adc7e85
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: cloud.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /2048
+      headers:
+        Host: cloud.arcvpn.my.id
+    udp: true
+
+  - name: proxies.arcvpn.my.id Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: 088936a5-c8ad-419d-a44d-6ef567e3ce56
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: proxies.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /2048
+      headers:
+        Host: proxies.arcvpn.my.id
+    udp: true
+
+  - name: proxies.arcvpn.my.id LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vless
+    uuid: 088936a5-c8ad-419d-a44d-6ef567e3ce56
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: proxies.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /2048
+      headers:
+        Host: proxies.arcvpn.my.id
+    udp: true
+
+  - name: asia.arcvpn.my.id Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: 4e2c33aa-4fdc-4ab1-971e-685c04e850e5
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: asia.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /2048
+      headers:
+        Host: asia.arcvpn.my.id
+    udp: true
+
+  - name: asia.arcvpn.my.id LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vless
+    uuid: 4e2c33aa-4fdc-4ab1-971e-685c04e850e5
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: asia.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /2048
+      headers:
+        Host: asia.arcvpn.my.id
+    udp: true
+
+  - name: dash.arcvpn.my.id Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: ef517aab-e426-4001-957b-9a1ccf046990
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: dash.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /2048
+      headers:
+        Host: dash.arcvpn.my.id
+    udp: true
+
+  - name: dash.arcvpn.my.id LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vless
+    uuid: ef517aab-e426-4001-957b-9a1ccf046990
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: dash.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /2048
+      headers:
+        Host: dash.arcvpn.my.id
+    udp: true
+
+  - name: aws.arcvpn.my.id Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: 42d531e6-5ec7-47d0-9805-5871d41d4e86
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aws.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /2048
+      headers:
+        Host: aws.arcvpn.my.id
+    udp: true
+
+  - name: aws.arcvpn.my.id LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vless
+    uuid: 42d531e6-5ec7-47d0-9805-5871d41d4e86
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: aws.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /2048
+      headers:
+        Host: aws.arcvpn.my.id
+    udp: true
 
   - name: do 443 Halo
     interface-name: eth1
