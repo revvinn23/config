@@ -1,38 +1,4 @@
 proxies:
-  - name: yyhiutty_vless_ws_tls Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 443
-    type: vless
-    uuid: cfd454d2-276f-48b5-9fa1-c5208be13d99
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ums-id01.ipxray.xyz
-    network: ws
-    ws-opts:
-      path: /vless-ws
-      headers:
-        Host: ums-id01.ipxray.xyz
-    udp: true
-
-  - name: yyhiutty_vless_ws_tls LiveOn
-    interface-name: wwan0
-    server: ums-id01.ipxray.xyz
-    port: 443
-    type: vless
-    uuid: cfd454d2-276f-48b5-9fa1-c5208be13d99
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: shopee.co.id
-    network: ws
-    ws-opts:
-      path: /vless-ws
-      headers:
-        Host: shopee.co.id
-    udp: true
-
   - name: zimaBoard_VVIP_HTTP Halo
     interface-name: eth1
     server: 104.16.53.111
@@ -87,7 +53,7 @@ proxies:
 
   - name: herza 443 LiveON
     interface-name: wwan0
-    server: 104.21.8.121
+    server: herza.wibu-xray.com
     port: 443
     type: vmess
     uuid: df96c5b8-a441-4ef1-9662-5879541d0a62
@@ -95,12 +61,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: herza.wibu-xray.com
+    servername: shopeemobile.com
     network: ws
     ws-opts:
       path: /wibu
       headers:
-        Host: herza.wibu-xray.com
+        Host: shopeemobile.com
     udp: true
     
   - name: ikd Halo
@@ -123,7 +89,7 @@ proxies:
 
   - name: ikd LiveON
     interface-name: wwan0
-    server: 104.21.8.121
+    server: ikd.wibu-xray.com
     port: 443
     type: vmess
     uuid: a9b37675-3728-4141-9554-55e2b8acffd4
@@ -131,12 +97,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ikd.wibu-xray.com
+    servername: shopee.co.id
     network: ws
     ws-opts:
       path: /wibu
       headers:
-        Host: ikd.wibu-xray.com
+        Host: shopee.co.id
     udp: true
 
   - name: Baliunited_ws Halo
