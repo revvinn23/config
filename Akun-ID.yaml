@@ -161,7 +161,7 @@ proxies:
 
   - name: natawsvmess LiveON
     interface-name: wwan0
-    server: 104.21.8.121
+    server: nata.wesi.fun
     port: 443
     type: vmess
     uuid: 8bccd774-1517-496a-afc3-ea67639ae3d2
@@ -169,12 +169,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: nata.wesi.fun
+    servername: shopee.co.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: nata.wesi.fun
+        Host: shopee.co.id
     udp: true
 
   - name: napolly_ws Halo
