@@ -117,12 +117,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: melbi-6.patunganvps.me
+    servername: mlb-6.internetgratishoax.me
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: melbi-6.patunganvps.me
+        Host: mlb-6.internetgratishoax.me
     udp: true
 
   - name: Melbi LiveON
@@ -135,10 +135,10 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: melbi-6.patunganvps.me
+    servername: mlb-6.internetgratishoax.me
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: melbi-6.patunganvps.me
+        Host: mlb-6.internetgratishoax.me
     udp: true
