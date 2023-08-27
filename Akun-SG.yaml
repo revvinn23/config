@@ -1,5 +1,5 @@
 proxies:
-  - name: microsoft.arcvpn.my.id tls_WS_direct_vmess 443 3 LiveON
+  - name: microsoft.arcvpn.my.id tls_WS_direct_vmess 443 3 Halo
     interface-name: eth1
     server: 104.16.53.111
     port: 443
