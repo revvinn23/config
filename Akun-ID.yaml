@@ -105,42 +105,6 @@ proxies:
         Host: shopee.co.id
     udp: true
 
-  - name: Baliunited_ws Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 443
-    type: vmess
-    uuid: 25e9fe9d-8ba9-4e94-b64e-5e46952cb87c
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: beon.patunganvps.my.id
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: beon.patunganvps.my.id
-    udp: true
-
-  - name: Baliunited_ws LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vmess
-    uuid: 25e9fe9d-8ba9-4e94-b64e-5e46952cb87c
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: beon.patunganvps.my.id
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: beon.patunganvps.my.id
-    udp: true
-
   - name: natawsvmess Halo
     interface-name: eth1
     server: 104.16.53.111
