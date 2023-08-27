@@ -37,19 +37,19 @@ proxies:
     
   - name: dimana-mana-ada Halo
     interface-name: eth1
-    server: 104.16.53.111
-    port: 80
+    server: vpnvyjgr47.scpotato.me
+    port: 443
     type: vless
     uuid: d95860a5-9a9d-4b1c-a782-a9646fb7564e
     cipher: auto
-    tls: false
+    tls: true
     skip-cert-verify: true
-    servername: vpnvyjgr47.scpotato.me
+    servername: www.shopee.com
     network: ws
     ws-opts:
       path: /vless
       headers:
-        Host: vpnvyjgr47.scpotato.me
+        Host: www.shopee.com
     udp: true
     
   - name: dimana-mana-ada LiveON
