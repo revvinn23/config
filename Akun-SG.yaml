@@ -85,12 +85,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: 91.192.81.33
+    servername: melbi-6.patunganvps.me
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: 91.192.81.33
+        Host: melbi-6.patunganvps.me
     udp: true
 
   - name: Melbi LiveON
@@ -103,10 +103,10 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: 91.192.81.33
+    servername: melbi-6.patunganvps.me
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: 91.192.81.33
+        Host: melbi-6.patunganvps.me
     udp: true
