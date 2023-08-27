@@ -1,43 +1,39 @@
 proxies:
-  - name: microsoft.arcvpn.my.id http_WS_direct_vmess 80 Halo
+  - name: fsegsgd_vmess_ws_tls Halo
     interface-name: eth1
     server: 104.16.53.111
+    port: 443
     type: vmess
-    port: 80
-    alpn:
-    - http/1.1
-    uuid: daa2b209-b03f-49b2-807b-16700cdfc122
-    servername: microsoft.arcvpn.my.id
-    tls: false
+    uuid: 7b613a66-7669-4e1d-a459-56767dc50ed9
     alterId: 0
-    cipher: chacha20-poly1305
-    udp: true
-    skip-cert-verify: false
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: mbc-sg03.ipv2ray.xyz
     network: ws
     ws-opts:
-      path: /vmess/
+      path: /vmess-ws
       headers:
-        Host: microsoft.arcvpn.my.id
-        
-  - name: microsoft.arcvpn.my.id http_WS_direct_vmess 80 LiveON
+        Host: mbc-sg03.ipv2ray.xyz
+    udp: true
+    
+  - name: fsegsgd_vmess_ws_tls LiveON
     interface-name: wwan0
     server: 104.21.8.121
+    port: 443
     type: vmess
-    port: 80
-    alpn:
-    - http/1.1
-    uuid: daa2b209-b03f-49b2-807b-16700cdfc122
-    servername: microsoft.arcvpn.my.id
-    tls: false
+    uuid: 7b613a66-7669-4e1d-a459-56767dc50ed9
     alterId: 0
-    cipher: chacha20-poly1305
-    udp: true
-    skip-cert-verify: false
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: mbc-sg03.ipv2ray.xyz
     network: ws
     ws-opts:
-      path: /vmess/
+      path: /vmess-ws
       headers:
-        Host: microsoft.arcvpn.my.id
+        Host: mbc-sg03.ipv2ray.xyz
+    udp: true
        
   - name: HERZA SG Halo
     interface-name: eth1
