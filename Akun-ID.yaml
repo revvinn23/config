@@ -182,7 +182,7 @@ proxies:
     server: 104.16.53.111
     port: 80
     type: vmess
-    uuid: d06845bb-98a2-4f5b-8b05-c682e37ee597
+    uuid: 466a4046-f6a0-4d20-a78d-4db266deb0e5
     alterId: 0
     cipher: auto
     tls: false
@@ -200,7 +200,7 @@ proxies:
     server: 104.21.8.121
     port: 80
     type: vmess
-    uuid: d06845bb-98a2-4f5b-8b05-c682e37ee597
+    uuid: 466a4046-f6a0-4d20-a78d-4db266deb0e5
     alterId: 0
     cipher: auto
     tls: false
