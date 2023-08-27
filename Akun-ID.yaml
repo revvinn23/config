@@ -2,12 +2,12 @@ proxies:
   - name: SentolopPEKOK_ws Halo
     interface-name: eth1
     server: 104.16.53.111
-    port: 443
+    port: 69
     type: vmess
     uuid: 0543caed-4054-466f-a86f-cdc77977185a
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     skip-cert-verify: true
     servername: gcp.kartolo.cloud
     network: ws
@@ -20,12 +20,12 @@ proxies:
   - name: SentolopPEKOK_ws LiveON
     interface-name: wwan0
     server: 104.21.8.121
-    port: 443
+    port: 69
     type: vmess
     uuid: 0543caed-4054-466f-a86f-cdc77977185a
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     skip-cert-verify: true
     servername: gcp.kartolo.cloud
     network: ws
@@ -38,12 +38,12 @@ proxies:
   - name: trialAJG_ws Halo
     interface-name: eth1
     server: 104.16.53.111
-    port: 443
+    port: 80
     type: vmess
     uuid: ceb2eb77-3c41-4153-a9d6-5cd541c743c5
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     skip-cert-verify: true
     servername: atharva.lunoxx.gay
     network: ws
@@ -56,12 +56,12 @@ proxies:
   - name: trialAJG_ws LiveON
     interface-name: wwan0
     server: 104.21.8.121
-    port: 443
+    port: 80
     type: vmess
     uuid: ceb2eb77-3c41-4153-a9d6-5cd541c743c5
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     skip-cert-verify: true
     servername: atharva.lunoxx.gay
     network: ws
