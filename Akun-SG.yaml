@@ -1,4 +1,40 @@
 proxies:
+  - name: microsoft.arcvpn.my.id tls_WS_direct_vmess 443 3 LiveON
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vmess
+    uuid: daa2b209-b03f-49b2-807b-16700cdfc122
+    alterId: 0
+    cipher: chacha20-poly1305
+    tls: true
+    skip-cert-verify: true
+    servername: microsoft.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /vmess/
+      headers:
+        Host: microsoft.arcvpn.my.id
+    udp: true
+    
+  - name: microsoft.arcvpn.my.id tls_WS_direct_vmess 443 3 LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vmess
+    uuid: daa2b209-b03f-49b2-807b-16700cdfc122
+    alterId: 0
+    cipher: chacha20-poly1305
+    tls: true
+    skip-cert-verify: true
+    servername: microsoft.arcvpn.my.id
+    network: ws
+    ws-opts:
+      path: /vmess/
+      headers:
+        Host: microsoft.arcvpn.my.id
+    udp: true
+    
   - name: fsegsgd_vmess_ws_tls Halo
     interface-name: eth1
     server: 104.16.53.111
