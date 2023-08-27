@@ -1,4 +1,44 @@
 proxies:
+  - name: microsoft.arcvpn.my.id http_WS_direct_vmess 80 Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    type: vmess
+    port: 80
+    alpn:
+    - http/1.1
+    uuid: daa2b209-b03f-49b2-807b-16700cdfc122
+    servername: microsoft.arcvpn.my.id
+    tls: false
+    alterId: 0
+    cipher: chacha20-poly1305
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /vmess/
+      headers:
+        Host: microsoft.arcvpn.my.id
+        
+  - name: microsoft.arcvpn.my.id http_WS_direct_vmess 80 LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    type: vmess
+    port: 80
+    alpn:
+    - http/1.1
+    uuid: daa2b209-b03f-49b2-807b-16700cdfc122
+    servername: microsoft.arcvpn.my.id
+    tls: false
+    alterId: 0
+    cipher: chacha20-poly1305
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /vmess/
+      headers:
+        Host: microsoft.arcvpn.my.id
+      
   - name: Vless-DN Halo
     interface-name: eth1
     server: 104.16.53.111
