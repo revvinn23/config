@@ -1,21 +1,4 @@
-proxies:
-  - name: Vmess-GRPC
-    type: vmess
-    server: jala.iptunnels.com
-    port: 443
-    uuid: 6b3cfe51-df06-4b1a-aa09-58e68a492007
-    alterId: 0
-    cipher: auto
-    udp: true
-    skip-cert-verify: true 
-    unified-delay: true
-      tls: true
-    servername: www.shopee.com
-    network: grpc
-    grpc-opts:      
-      grpc-service-name: grpc
-    interface-name: eth1  
-  
+proxies: 
   - name: dimana-mana-ada Halo
     interface-name: eth1
     server: vpnvyjgr47.scpotato.me
