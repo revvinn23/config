@@ -110,35 +110,35 @@ proxies:
   - name: Melbi Halo
     interface-name: eth1
     server: 104.16.53.111
-    port: 443
+    port: 80
     type: vmess
-    uuid: fad20281-c46c-403f-a26e-1fdfb10b7036
+    uuid: f4b3ca77-682a-4bb2-b7c0-840bd64864da
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     skip-cert-verify: true
-    servername: mlb-6.internetgratishoax.me
+    servername: melbi-6.patunganvps.my.id
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: mlb-6.internetgratishoax.me
+        Host: melbi-6.patunganvps.my.id
     udp: true
 
   - name: Melbi LiveON
     interface-name: wwan0
     server: 104.21.8.121
-    port: 443
+    port: 80
     type: vmess
-    uuid: fad20281-c46c-403f-a26e-1fdfb10b7036
+    uuid: f4b3ca77-682a-4bb2-b7c0-840bd64864da
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     skip-cert-verify: true
-    servername: mlb-6.internetgratishoax.me
+    servername: melbi-6.patunganvps.my.id
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: mlb-6.internetgratishoax.me
+        Host: melbi-6.patunganvps.my.id
     udp: true
