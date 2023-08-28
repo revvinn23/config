@@ -16,25 +16,7 @@ proxies:
       headers:
         Host: jala.iptunnels.com
     udp: true
-    
-  - name: Iptunnels LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 2096
-    type: vmess
-    uuid: 515e5f6e-740a-4f14-b0f9-c91aa52eea52
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: jala.iptunnels.com
-    network: ws
-    ws-opts:
-      path: /shopee.co.id/buy-vmess-ws-pm-telegram-at-synricha
-      headers:
-        Host: jala.iptunnels.com
-    udp: true
-    
+        
   - name: Iptunnels LiveON
     interface-name: eth1
     server: 104.16.53.111
