@@ -1,41 +1,5 @@
 proxies:
 
-  - name: trialAJG_ws Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 80
-    type: vmess
-    uuid: ceb2eb77-3c41-4153-a9d6-5cd541c743c5
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: atharva.lunoxx.gay
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: atharva.lunoxx.gay
-    udp: true
-    
-  - name: trialAJG_ws LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 80
-    type: vmess
-    uuid: ceb2eb77-3c41-4153-a9d6-5cd541c743c5
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: atharva.lunoxx.gay
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: atharva.lunoxx.gay
-    udp: true
-    
   - name: dimana-mana-ada Halo
     interface-name: eth1
     server: vpnvyjgr47.scpotato.me
