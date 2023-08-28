@@ -27,7 +27,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     unified-delay: true
-    servername: shopeemobile.com
+    servername: www.shopee.com
     network: grpc
     grpc-opts:
       grpc-service-name: buy-vmess-grpc-pm-telegram-at-synricha
