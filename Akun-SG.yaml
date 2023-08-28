@@ -34,42 +34,6 @@ proxies:
       headers:
         Host: microsoft.arcvpn.my.id
     udp: true
-    
-  - name: fsegsgd_vmess_ws_tls Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 443
-    type: vmess
-    uuid: 7b613a66-7669-4e1d-a459-56767dc50ed9
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: mbc-sg03.ipv2ray.xyz
-    network: ws
-    ws-opts:
-      path: /vmess-ws
-      headers:
-        Host: mbc-sg03.ipv2ray.xyz
-    udp: true
-    
-  - name: fsegsgd_vmess_ws_tls LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vmess
-    uuid: 7b613a66-7669-4e1d-a459-56767dc50ed9
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: mbc-sg03.ipv2ray.xyz
-    network: ws
-    ws-opts:
-      path: /vmess-ws
-      headers:
-        Host: mbc-sg03.ipv2ray.xyz
-    udp: true
        
   - name: HERZA SG Halo
     interface-name: eth1
