@@ -1,38 +1,34 @@
 proxies:
-  - name: microsoft.arcvpn.my.id tls_WS_direct_vmess 443 3 Halo
+  - name: AlfinVPN_Vmess Halo
     interface-name: eth1
-    server: 104.16.53.111
+    server: wawi.alfvpn.cloud
     port: 443
     type: vmess
-    uuid: daa2b209-b03f-49b2-807b-16700cdfc122
+    uuid: 1ab30b20-34af-4caa-8067-5f57ce52c770
     alterId: 0
-    cipher: chacha20-poly1305
+    cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: microsoft.arcvpn.my.id
-    network: ws
-    ws-opts:
-      path: /vmess/
-      headers:
-        Host: microsoft.arcvpn.my.id
+    servername: www.shopee.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vmess-grpc
     udp: true
     
-  - name: microsoft.arcvpn.my.id tls_WS_direct_vmess 443 3 LiveON
+  - name: AlfinVPN_Vmess LiveON
     interface-name: wwan0
-    server: 104.21.8.121
+    server: wawi.alfvpn.cloud
     port: 443
     type: vmess
-    uuid: daa2b209-b03f-49b2-807b-16700cdfc122
+    uuid: 1ab30b20-34af-4caa-8067-5f57ce52c770
     alterId: 0
-    cipher: chacha20-poly1305
+    cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: microsoft.arcvpn.my.id
-    network: ws
-    ws-opts:
-      path: /vmess/
-      headers:
-        Host: microsoft.arcvpn.my.id
+    servername: shopeemobile.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vmess-grpc
     udp: true
        
   - name: HERZA SG Halo
