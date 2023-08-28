@@ -1,5 +1,36 @@
 proxies:
-   
+  - name: jala.iptunnels.com Halo
+    interface-name: eth1
+    server: jala.iptunnels.com
+    port: 443
+    type: vless
+    uuid: e31f8767-c7c8-47be-8830-47cf793df281
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: www.shopee.com
+    network: grpc
+    grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: buy-vless-grpc-pm-telegram-at-synricha
+    udp: true
+    
+  - name: jala.iptunnels.com LiveON
+    interface-name: wwan0
+    server: jala.iptunnels.com
+    port: 443
+    type: vless
+    uuid: e31f8767-c7c8-47be-8830-47cf793df281
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: shopeemobile.com
+    network: grpc
+    grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: buy-vless-grpc-pm-telegram-at-synricha
+    udp: true
+  
   - name: dimana-mana-ada Halo
     interface-name: eth1
     server: vpnvyjgr47.scpotato.me
