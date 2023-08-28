@@ -2,7 +2,7 @@ proxies:
   - name: Iptunnels Halo
     interface-name: eth1
     server: 104.16.53.111
-    port: 2096
+    port: 443
     type: vmess
     uuid: 515e5f6e-740a-4f14-b0f9-c91aa52eea52
     alterId: 0
@@ -12,7 +12,7 @@ proxies:
     servername: jala.iptunnels.com
     network: ws
     ws-opts:
-      path: /www.shopee.co.id/buy-vmess-ws-pm-telegram-at-synricha
+      path: /buy-vmess-ws-pm-telegram-at-synricha
       headers:
         Host: jala.iptunnels.com
     udp: true
