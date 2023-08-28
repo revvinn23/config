@@ -9,7 +9,6 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    unified-delay: true
     servername: www.shopee.com
     network: grpc
     grpc-opts:
@@ -26,7 +25,6 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    unified-delay: true
     servername: shopeemobile.com
     network: grpc
     grpc-opts:
