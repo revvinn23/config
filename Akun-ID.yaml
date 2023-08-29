@@ -1,41 +1,5 @@
 proxies:
-  - name: minggu Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 443
-    type: vmess
-    uuid: 374c8909-af35-42c6-81a9-5bb8fb143e36
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: vbox.kemaindah.site
-    alterId: 0
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: vbox.kemaindah.site
-
-        
-  - name: minggu LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vmess
-    uuid: 374c8909-af35-42c6-81a9-5bb8fb143e36
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: vbox.kemaindah.site
-    alterId: 0
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: vbox.kemaindah.site
-        
+       
   - name: LIVE ON ekor 111
     interface-name: wwan0
     type: trojan
