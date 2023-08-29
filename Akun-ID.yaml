@@ -17,7 +17,7 @@ proxies:
   - name: LIVE ON ekor 121
     interface-name: wwan0
     type: trojan
-    server: 104.21.8.12-1
+    server: 104.21.8.121
     port: 443
     password: d14d2626-a0ad-49ee-8bb1-0fe701d2771c
     udp: true
