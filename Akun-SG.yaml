@@ -20,11 +20,11 @@ proxies:
   - name: revvin_ws LiveON
     interface-name: wwan0
     server: 104.21.8.121
-    port: 69
+    port: 443
     type: vmess
     uuid: 3fe02ef8-8465-444e-bad6-5bab57724045
     cipher: auto
-    tls: false
+    tls: true
     udp: true
     skip-cert-verify: true
     network: ws
