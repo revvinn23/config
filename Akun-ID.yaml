@@ -1,4 +1,18 @@
 proxies:
+  - name: ID-BARU
+    interface-name: wwan0
+    server: premium.vpnstore28.my.id
+    port: 443
+    type: trojan
+    password: VIP
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: www.shopee.com
+
   - name: jala.iptunnels.com Halo
     interface-name: eth1
     server: jala.iptunnels.com
