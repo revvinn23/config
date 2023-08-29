@@ -1,30 +1,4 @@
 proxies:
-  - name: SG+Vless-H2(2023-09-06) Halo
-    interface-name: eth1
-    server: vlh2.sg3.socifiles.com
-    port: 443
-    type: vless
-    uuid: 887d4220-468f-11ee-b350-1239d0255272
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: http
-    servername: www.shopee.com
-    
-  - name: SG+Vless-H2(2023-09-06) LiveON
-    interface-name: wwan0
-    server: vlh2.sg3.socifiles.com
-    port: 443
-    type: vless
-    uuid: 887d4220-468f-11ee-b350-1239d0255272
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: http
-    servername: www.shopee.com
-    
   - name: revvin_ws Halo
     interface-name: eth1
     server: greenfloid.lunoxx.gay
@@ -102,7 +76,7 @@ proxies:
     server: 104.16.53.111
     port: 80
     type: vmess
-    uuid: f4b3ca77-682a-4bb2-b7c0-840bd64864da
+    uuid: 4fe2209e-82be-4d54-8416-3fea985431f7
     alterId: 0
     cipher: auto
     tls: false
@@ -120,7 +94,7 @@ proxies:
     server: 104.21.8.121
     port: 80
     type: vmess
-    uuid: f4b3ca77-682a-4bb2-b7c0-840bd64864da
+    uuid: 4fe2209e-82be-4d54-8416-3fea985431f7
     alterId: 0
     cipher: auto
     tls: false
