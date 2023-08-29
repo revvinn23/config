@@ -33,7 +33,7 @@ proxies:
       headers:
         Host: sg3.socifiles.com
         
-  - name: Melbi Test2
+  - name: Melbi Halo
     interface-name: eth1
     server: 104.16.53.111
     port: 80
