@@ -1,4 +1,40 @@
 proxies:
+  - name: revvin_ws Halo
+    interface-name: eth1
+    server: greenfloid.lunoxx.gay
+    port: 443
+    type: vmess
+    uuid: 3fe02ef8-8465-444e-bad6-5bab57724045
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: www.shopee.com
+    alterId: 0
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: www.shopee.com
+        
+  - name: revvin_ws LiveON
+    interface-name: wwan0
+    server: greenfloid.lunoxx.gay
+    port: 443
+    type: vmess
+    uuid: 3fe02ef8-8465-444e-bad6-5bab57724045
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: www.shopee.com
+    alterId: 0
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: www.shopee.com
+        
   - name: AlfinVPN_Vmess Halo
     interface-name: eth1
     server: wawi.alfvpn.cloud
