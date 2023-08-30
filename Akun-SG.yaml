@@ -1,4 +1,33 @@
-proxies:       
+proxies:
+  - name: sgsfgse_vmess_tcp_tls Halo
+    interface-name: eth1
+    server: adv-nl01.ipv2ray.xyz
+    port: 443
+    type: vmess
+    uuid: 00708723-f6fb-494a-84f3-870c19364617
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: c-api-bit.shopeemobile.com
+    alterId: 0
+
+    
+  - name: sgsfgse_vmess_tcp_tls LiveON
+    interface-name: wwan0
+    server: adv-nl01.ipv2ray.xyz
+    port: 443
+    type: vmess
+    uuid: 00708723-f6fb-494a-84f3-870c19364617
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: c-api-bit.shopeemobile.com
+    alterId: 0
+    
   - name: Melbi Halo
     interface-name: eth1
     server: 104.16.53.111
