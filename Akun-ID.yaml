@@ -136,7 +136,7 @@ proxies:
     ws-opts:
       path: /wibu
       headers:
-        Host: c
+        Host: shopeemobile.com
     udp: true
     
   - name: ikd Halo
