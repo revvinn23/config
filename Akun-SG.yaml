@@ -1,5 +1,5 @@
 proxies:
-  - name: t.me/javanesevpnstore 4 Halo
+  - name: 4 Halo
     interface-name: eth1
     server: 104.16.53.111
     port: 443
@@ -17,7 +17,7 @@ proxies:
       headers:
         Host: Dusseldorf.kotick.site
         
-  - name: t.me/javanesevpnstore 4 LiveON
+  - name: 4 LiveON
     interface-name: wwan0
     server: 104.21.8.121
     port: 443
