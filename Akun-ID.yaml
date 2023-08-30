@@ -120,24 +120,6 @@ proxies:
       headers:
         Host: herza.wibu-xray.com
     udp: true
-
-  - name: herza 443 LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vmess
-    uuid: df96c5b8-a441-4ef1-9662-5879541d0a62
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: herza.wibu-xray.com
-    network: ws
-    ws-opts:
-      path: /wibu
-      headers:
-        Host: herza.wibu-xray.com
-    udp: true
     
   - name: ikd Halo
     interface-name: eth1
