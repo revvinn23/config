@@ -69,40 +69,6 @@ proxies:
       grpc-service-name: buy-vmess-grpc-pm-telegram-at-synricha
     udp: true
     
-  - name: dimana-mana-ada Halo
-    interface-name: eth1
-    server: vpnvyjgr47.scpotato.me
-    port: 443
-    type: vless
-    uuid: d95860a5-9a9d-4b1c-a782-a9646fb7564e
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: c-api-bit.shopeemobile.com
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        Host: c-api-bit.shopeemobile.com
-    udp: true
-    
-  - name: dimana-mana-ada LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 80
-    type: vless
-    uuid: d95860a5-9a9d-4b1c-a782-a9646fb7564e
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: vpnvyjgr47.scpotato.me
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        Host: vpnvyjgr47.scpotato.me
-    udp: true
-    
   - name: zimaBoard_VVIP_HTTP Halo
     interface-name: eth1
     server: 104.16.53.111
