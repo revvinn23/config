@@ -195,7 +195,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     unified-delay: true
-    servername: www.shopee.com
+    servername: c-api-bit.shopeemobile.com
     network: grpc
     grpc-opts:
       grpc-service-name: buy-vmess-grpc-pm-telegram-at-synricha
@@ -212,7 +212,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     unified-delay: true
-    servername: www.shopee.com
+    servername: c-api-bit.shopeemobile.com
     network: grpc
     grpc-opts:
       grpc-service-name: buy-vmess-grpc-pm-telegram-at-synricha
@@ -227,12 +227,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: www.shopee.com
+    servername: c-api-bit.shopeemobile.com
     network: ws
     ws-opts:
       path: /vless
       headers:
-        Host: www.shopee.com
+        Host: c-api-bit.shopeemobile.com
     udp: true
     
   - name: dimana-mana-ada LiveON
