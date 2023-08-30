@@ -1,4 +1,40 @@
 proxies:
+  - name: GreenFoild Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    type: vmess
+    port: 80
+    uuid: 7a1201b6-ec30-437c-b09f-cdf870a47613
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    skip-cert-verify: false
+    servername: greenfloid.lunoxx.gay
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: greenfloid.lunoxx.gay
+        
+  - name: GreenFoild LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    type: vmess
+    port: 80
+    uuid: 7a1201b6-ec30-437c-b09f-cdf870a47613
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    skip-cert-verify: false
+    servername: greenfloid.lunoxx.gay
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: greenfloid.lunoxx.gay
+        
   - name: sgsfgse_vmess_ws_tls Halo
     interface-name: eth1
     server: 104.16.53.111
@@ -15,6 +51,7 @@ proxies:
       path: /vless-ws
       headers:
         Host: ovh-sg03.ipxray.xyz
+        
   - name: sgsfgse_vmess_ws_tls LiveON
     interface-name: wwan0
     server: 104.21.8.121
