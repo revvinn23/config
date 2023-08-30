@@ -1,38 +1,4 @@
-proxies:
-  - name: SG+Vless-WS(2023-09-06) Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 443
-    type: vless
-    uuid: 11957140-4694-11ee-9ce3-1239d0255272
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: sg3.socifiles.com
-    ws-opts:
-      path: /vlws
-      headers:
-        Host: sg3.socifiles.com
-        
-  - name: SG+Vless-WS(2023-09-06) LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vless
-    uuid: 11957140-4694-11ee-9ce3-1239d0255272
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: sg3.socifiles.com
-    ws-opts:
-      path: /vlws
-      headers:
-        Host: sg3.socifiles.com
-        
+proxies:       
   - name: Melbi Halo
     interface-name: eth1
     server: 104.16.53.111
