@@ -3,37 +3,34 @@ proxies:
     interface-name: eth1
     server: 104.16.53.111
     port: 443
-    type: vmess
-    uuid: 00708723-f6fb-494a-84f3-870c19364617
+    type: vless
+    uuid: 15688ea3-9c84-4fe1-93d7-0b5f7a2ff4fa
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: adv-nl01.ipv2ray.xyz
-    alterId: 0
+    servername: ovh-sg03.ipxray.xyz
     ws-opts:
-      path: /vmess-ws
+      path: /vless-ws
       headers:
-        Host: adv-nl01.ipv2ray.xyz
-        
+        Host: ovh-sg03.ipxray.xyz
   - name: sgsfgse_vmess_ws_tls LiveON
     interface-name: wwan0
     server: 104.21.8.121
     port: 443
-    type: vmess
-    uuid: 00708723-f6fb-494a-84f3-870c19364617
+    type: vless
+    uuid: 15688ea3-9c84-4fe1-93d7-0b5f7a2ff4fa
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: adv-nl01.ipv2ray.xyz
-    alterId: 0
+    servername: ovh-sg03.ipxray.xyz
     ws-opts:
-      path: /vmess-ws
+      path: /vless-ws
       headers:
-        Host: adv-nl01.ipv2ray.xyz
+        Host: ovh-sg03.ipxray.xyz
         
   - name: Melbi Halo
     interface-name: eth1
