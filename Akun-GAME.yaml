@@ -1,21 +1,4 @@
 proxies:
-  - name: apalo.tutorialmac.my.id tls WS direct vmess Halo Game
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 443
-    type: vmess
-    uuid: c5d55498-26c3-466a-93ee-d2b803b9eab4
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: apalo.tutorialmac.my.id
-    alterId: 0
-    ws-opts:
-      path: /vmessWS
-      headers:
-        Host: apalo.tutorialmac.my.id
         
   - name: apalo.tutorialmac.my.id tls WS direct vmess LiveON Game
     interface-name: wwan0
@@ -34,24 +17,7 @@ proxies:
       path: /vmessWS
       headers:
         Host: apalo.tutorialmac.my.id
-        
-  - name: zimaBoard_VVIP_HTTP Halo Game
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 80
-    type: vless
-    uuid: 0dc4eef0-4aca-48b5-af73-7e299333fd87
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: runcloud-bgn.apasih.id
-    network: ws
-    ws-opts:
-      path: /buy-vless-ws-pm-telegram-at-synricha
-      headers:
-        Host: runcloud-bgn.apasih.id
-    udp: true
-    
+           
   - name: zimaBoard_VVIP_HTTP LiveON Game
     interface-name: wwan0
     server: 104.21.8.121
