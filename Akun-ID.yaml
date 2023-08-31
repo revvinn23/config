@@ -1,22 +1,4 @@
-proxies:
-       
-  - name: jala Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 80
-    type: vless
-    uuid: 99e40a4b-e8d2-47a2-b1cd-670fe7efbdd8
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: jala.iptunnels.com
-    network: ws
-    ws-opts:
-      path: /buy-vless-ws-pm-telegram-at-synricha
-      headers:
-        Host: jala.iptunnels.com
-    udp: true
-    
+proxies:   
   - name: jala LiveON
     interface-name: wwan0
     server: 104.21.8.121
@@ -33,24 +15,6 @@ proxies:
       headers:
         Host: jala.iptunnels.com
     udp: true
-    
-  - name: apalo.tutorialmac.my.id tls WS direct vmess Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 443
-    type: vmess
-    uuid: c5d55498-26c3-466a-93ee-d2b803b9eab4
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: apalo.tutorialmac.my.id
-    alterId: 0
-    ws-opts:
-      path: /vmessWS
-      headers:
-        Host: apalo.tutorialmac.my.id
         
   - name: apalo.tutorialmac.my.id tls WS direct vmess LiveON
     interface-name: wwan0
@@ -70,23 +34,6 @@ proxies:
       headers:
         Host: apalo.tutorialmac.my.id
 
-  - name: jala.iptunnels.com Halo
-    interface-name: eth1
-    server: jala.iptunnels.com
-    port: 443
-    type: vmess
-    uuid: 6b3cfe51-df06-4b1a-aa09-58e68a492007
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    unified-delay: true
-    servername: c-api-bit.shopeemobile.com
-    network: grpc
-    grpc-opts:
-      grpc-service-name: buy-vmess-grpc-pm-telegram-at-synricha
-    udp: true
-    
   - name: jala.iptunnels.com LiveON
     interface-name: wwan0
     server: jala.iptunnels.com
@@ -103,24 +50,7 @@ proxies:
     grpc-opts:
       grpc-service-name: buy-vmess-grpc-pm-telegram-at-synricha
     udp: true
-    
-  - name: zimaBoard_VVIP_HTTP Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 80
-    type: vless
-    uuid: 0dc4eef0-4aca-48b5-af73-7e299333fd87
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: runcloud-bgn.apasih.id
-    network: ws
-    ws-opts:
-      path: /buy-vless-ws-pm-telegram-at-synricha
-      headers:
-        Host: runcloud-bgn.apasih.id
-    udp: true
-    
+       
   - name: zimaBoard_VVIP_HTTP LiveON
     interface-name: wwan0
     server: 104.21.8.121
@@ -137,43 +67,7 @@ proxies:
       headers:
         Host: runcloud-bgn.apasih.id
     udp: true
-        
-  - name: herza 443 Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 443
-    type: vmess
-    uuid: df96c5b8-a441-4ef1-9662-5879541d0a62
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: herza.wibu-xray.com
-    network: ws
-    ws-opts:
-      path: /wibu
-      headers:
-        Host: herza.wibu-xray.com
-    udp: true
-    
-  - name: ikd Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 443
-    type: vmess
-    uuid: a9b37675-3728-4141-9554-55e2b8acffd4
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ikd.wibu-xray.com
-    network: ws
-    ws-opts:
-      path: /wibu
-      headers:
-        Host: ikd.wibu-xray.com
-    udp: true
-
+           
   - name: ikd LiveON
     interface-name: wwan0
     server: ikd.wibu-xray.com
@@ -190,24 +84,6 @@ proxies:
       path: /wibu
       headers:
         Host: shopee.co.id
-    udp: true
-
-  - name: napolly_ws Halo
-    interface-name: eth1
-    server: 104.16.53.111
-    port: 80
-    type: vmess
-    uuid: 466a4046-f6a0-4d20-a78d-4db266deb0e5
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: sanggoro-2.patunganvps.my.id
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: sanggoro-2.patunganvps.my.id
     udp: true
 
   - name: napolly_ws LiveON
