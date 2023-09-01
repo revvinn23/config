@@ -16,24 +16,6 @@ proxies:
         Host: jala.iptunnels.com
     udp: true
         
-  - name: apalo.tutorialmac.my.id tls WS direct vmess LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vmess
-    uuid: c5d55498-26c3-466a-93ee-d2b803b9eab4
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: apalo.tutorialmac.my.id
-    alterId: 0
-    ws-opts:
-      path: /vmessWS
-      headers:
-        Host: apalo.tutorialmac.my.id
-
   - name: jala.iptunnels.com LiveON
     interface-name: wwan0
     server: jala.iptunnels.com
