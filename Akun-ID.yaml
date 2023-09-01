@@ -34,23 +34,7 @@ proxies:
         Host: jala.iptunnels.com
     udp: true
         
-  - name: jala.iptunnels.com LiveON
-    interface-name: wwan0
-    server: jala.iptunnels.com
-    port: 443
-    type: vmess
-    uuid: 6b3cfe51-df06-4b1a-aa09-58e68a492007
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    unified-delay: true
-    servername: c-api-bit.shopeemobile.com
-    network: grpc
-    grpc-opts:
-      grpc-service-name: buy-vmess-grpc-pm-telegram-at-synricha
-    udp: true
-       
+
   - name: zimaBoard_VVIP_HTTP LiveON
     interface-name: wwan0
     server: 104.21.8.121
