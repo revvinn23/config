@@ -16,21 +16,3 @@ proxies:
       path: /vless-ws
       headers:
         Host: ovh-sg03.ipxray.xyz
-        
-  - name: Melbi LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 80
-    type: vmess
-    uuid: 4fe2209e-82be-4d54-8416-3fea985431f7
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: melbi-6.patunganvps.my.id
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: melbi-6.patunganvps.my.id
-    udp: true
