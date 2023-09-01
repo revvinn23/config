@@ -1,4 +1,22 @@
 proxies:
+  - name: FIN_VMESS
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vmess
+    uuid: ea753d5d-dc42-4561-ada0-bf4d113fc04f
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: pmd4.alfvpn.cloud
+    alterId: 0
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: pmd4.alfvpn.cloud
+        
   - name: hanangocok
     interface-name: wwan0
     server: 104.21.8.121
