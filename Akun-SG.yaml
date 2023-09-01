@@ -1,5 +1,21 @@
 proxies:
-            
+  - name: hanangocok
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vless
+    uuid: b8378733-fa17-48ab-aaae-20394fc7ba97
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: gfloid.lunoxx.gay
+    ws-opts:
+      path: /vless
+      headers:
+        Host: gfloid.lunoxx.gay
+        
   - name: sgsfgse_vmess_ws_tls LiveON
     interface-name: wwan0
     server: 104.21.8.121
