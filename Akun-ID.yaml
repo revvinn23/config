@@ -1,4 +1,22 @@
 proxies:   
+  - name: herza 443
+    interface-name: wwan0
+    server: herza.wibu-xray.com
+    port: 443
+    type: vmess
+    uuid: df96c5b8-a441-4ef1-9662-5879541d0a62
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: www.shopee.com
+    alterId: 0
+    ws-opts:
+      path: /wibu
+      headers:
+        Host: www.shopee.com
+
   - name: jala LiveON
     interface-name: wwan0
     server: 104.21.8.121
