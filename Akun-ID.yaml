@@ -1,5 +1,19 @@
 proxies:
-    
+  - name: atharva
+    interface-name: wwan0
+    type: trojan
+    server: 172.67.139.111
+    port: 443
+    password: d14d2626-a0ad-49ee-8bb1-0fe701d2771c
+    udp: true
+    sni: atharva-5.vpspatungan.my.id
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /trojan-ws
+      headers:
+        Host: atharva-5.vpspatungan.my.id
+        
   - name: cloudhost.arcvpn.my.id tls_h2 WS direct vless
     interface-name: wwan0
     server: 104.21.8.121
