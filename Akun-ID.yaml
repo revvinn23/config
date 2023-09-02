@@ -14,20 +14,6 @@ proxies:
       headers:
         Host: pls.wesi.fun
         
-  - name: pc24trojan
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 80
-    type: trojan
-    password: pc24trojan
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /trojan-ws
-      headers:
-        Host: pls.wesi.fun
-        
   - name: herza 443
     interface-name: wwan0
     server: herza.wibu-xray.com
