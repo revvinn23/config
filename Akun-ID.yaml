@@ -14,22 +14,6 @@ proxies:
       headers:
         Host: atharva-5.vpspatungan.my.id
         
-  - name: cloudhost.arcvpn.my.id tls_h2 WS direct vless
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vless
-    uuid: 3ee555da-7585-4644-8a5d-3512c0132a52
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: cloudhost.arcvpn.my.id
-    ws-opts:
-      path: /vless/
-      headers:
-        Host: cloudhost.arcvpn.my.id
         
   - name: cloudhost.arcvpn.my.id tls_h2 WS direct trojan
     interface-name: wwan0
@@ -43,74 +27,6 @@ proxies:
     sni: cloudhost.arcvpn.my.id
     ws-opts:
       path: /trojan/
-      headers:
-        Host: cloudhost.arcvpn.my.id
-        
-  - name: cloudhost.arcvpn.my.id tls_h2 WS direct vmess
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vmess
-    uuid: 3ee555da-7585-4644-8a5d-3512c0132a52
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: cloudhost.arcvpn.my.id
-    alterId: 0
-    ws-opts:
-      path: /vmess/
-      headers:
-        Host: cloudhost.arcvpn.my.id    
-        
-  - name: cloudhost.arcvpn.my.id tls WS direct vless
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vless
-    uuid: 3ee555da-7585-4644-8a5d-3512c0132a52
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: cloudhost.arcvpn.my.id
-    ws-opts:
-      path: /vless/
-      headers:
-        Host: cloudhost.arcvpn.my.id
-        
-  - name: cloudhost.arcvpn.my.id tls WS direct trojan
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: trojan
-    password: 3ee555da-7585-4644-8a5d-3512c0132a52
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    sni: cloudhost.arcvpn.my.id
-    ws-opts:
-      path: /trojan/
-      headers:
-        Host: cloudhost.arcvpn.my.id
-        
-  - name: cloudhost.arcvpn.my.id tls WS direct vmess
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vmess
-    uuid: 3ee555da-7585-4644-8a5d-3512c0132a52
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: cloudhost.arcvpn.my.id
-    alterId: 0
-    ws-opts:
-      path: /vmess/
       headers:
         Host: cloudhost.arcvpn.my.id
         
