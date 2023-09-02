@@ -1,18 +1,4 @@
 proxies:
-
-        
-  - name: cloudhost.arcvpn.my.id tls_h2 XTLS direct vless
-    interface-name: wwan0
-    server: cloudhost.arcvpn.my.id
-    port: 443
-    type: vless
-    uuid: 3ee555da-7585-4644-8a5d-3512c0132a52
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: tcp
-    servername: www.shopee.co.id
     
   - name: cloudhost.arcvpn.my.id tls_h2 WS direct vless
     interface-name: wwan0
@@ -79,34 +65,6 @@ proxies:
     grpc-opts:
       grpc-service-name: vless-grpc
       
-  - name: cloudhost.arcvpn.my.id tls_h2 grpc direct trojan
-    interface-name: wwan0
-    server: cloudhost.arcvpn.my.id
-    port: 443
-    type: trojan
-    password: 3ee555da-7585-4644-8a5d-3512c0132a52
-    udp: true
-    skip-cert-verify: true
-    network: grpc
-    sni: www.shopee.co.id
-    grpc-opts:
-      grpc-service-name: trojan-grpc
-      
-  - name: cloudhost.arcvpn.my.id tls_h2 grpc direct vmess
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vmess
-    uuid: 3ee555da-7585-4644-8a5d-3512c0132a52
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: grpc
-    servername: cloudhost.arcvpn.my.id
-    alterId: 0
-    grpc-opts:
-      grpc-service-name: vmess-grpc
       
   - name: cloudhost.arcvpn.my.id tls XTLS direct vless
     interface-name: wwan0
