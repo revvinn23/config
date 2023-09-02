@@ -1,4 +1,22 @@
 proxies:
+  - name: revvin_ws
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vmess
+    uuid: c039de48-508b-4b0b-a76d-8865a01dd7ce
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: melbi.lunoxx.gay
+    alterId: 0
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: melbi.lunoxx.gay
+        
   - name: testvless.revvinn.my.id
     interface-name: wwan0
     server: 104.21.8.121
