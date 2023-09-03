@@ -1,5 +1,22 @@
 proxies:
-        
+  - name: HERZA SG LiveON
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 443
+    type: vmess
+    uuid: 217dd354-1170-485d-89f1-58c639890376
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: herza-SG.wibu-xray.com
+    network: ws
+    ws-opts:
+      path: /WIBU
+      headers:
+        Host: herza-SG.wibu-xray.com
+    udp: true
+    
   - name: revvin_ws
     interface-name: wwan0
     server: 104.21.8.121
