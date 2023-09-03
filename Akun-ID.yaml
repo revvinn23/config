@@ -1,4 +1,31 @@
 proxies:
+
+  - name: |hk
+    interface-name: wwan0
+    server: 156.227.6.100
+    port: 443
+    type: vless
+    uuid: 09285b20-a5db-4ca2-f3af-7e616a61a534
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: www.shopee.com
+
+  - name: |us
+    interface-name: wwan0
+    server: 45.82.247.82
+    port: 443
+    type: vless
+    uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: tcp
+    servername: www.shopee.com
+
   - name: atharva
     interface-name: wwan0
     type: trojan
