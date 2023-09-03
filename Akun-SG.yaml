@@ -1,21 +1,4 @@
 proxies:
-  - name: trial7
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vmess
-    uuid: 7870613c-9ed8-4952-a8ae-f0eb0cf3002c
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: agungvpn.mahirmandala.my.id
-    alterId: 0
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: agungvpn.mahirmandala.my.id
         
   - name: revvin_ws
     interface-name: wwan0
