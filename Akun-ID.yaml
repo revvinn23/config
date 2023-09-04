@@ -1,4 +1,21 @@
 proxies:
+  - name: Banda_Neira_ws
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 80
+    type: vless
+    uuid: b40941dd-981b-4025-ad1f-18a0ba15ad88
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: nusa-1.patunganvps.my.id
+    network: ws
+    ws-opts:
+      path: /vlessws
+      headers:
+        Host: nusa-1.patunganvps.my.id
+    udp: true
+        
   - name: VPNSTORE
     interface-name: wwan0
     server: 104.21.8.121
@@ -16,24 +33,6 @@ proxies:
       path: /vmess
       headers:
         Host: desa.vpnstore28.my.id
-        
-  - name: Trialvmess8ZY9
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vmess
-    uuid: 852dace8-2bd8-4a77-a9e9-4e04e16f8032
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: id.iconknet.my.id
-    alterId: 0
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: id.iconknet.my.id
         
   - name: atharva
     interface-name: wwan0
