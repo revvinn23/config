@@ -16,24 +16,6 @@ proxies:
         Host: nusa-1.patunganvps.my.id
     udp: true
         
-  - name: VPNSTORE
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vmess
-    uuid: e0cafdd9-5ea4-4961-b75b-174e6cf05ef3
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: desa.vpnstore28.my.id
-    alterId: 0
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: desa.vpnstore28.my.id
-        
   - name: atharva
     interface-name: wwan0
     type: trojan
@@ -48,7 +30,6 @@ proxies:
       path: /trojan-ws
       headers:
         Host: atharva-5.vpspatungan.my.id
-        
         
   - name: herza 443
     interface-name: wwan0
