@@ -1,4 +1,21 @@
 proxies:
+  - name: XL id
+    interface-name: wwan0
+    type: vmess
+    server: ums-id02.ipv2ray.xyz
+    port: 443
+    uuid: d51c95e5-6aec-4279-97dc-8bb3cb4b7418
+    alterId: 0
+    cipher: none
+    udp: true
+    skip-cert-verify: true
+    tls: true
+    servername: www.shopee.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vmess-grpc
+
+
   - name: Banda_Neira_ws
     interface-name: wwan0
     server: 172.67.139.111
