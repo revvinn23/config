@@ -1,7 +1,7 @@
 proxies:
   - name: Banda_Neira_ws
     interface-name: wwan0
-    server: 104.21.8.121
+    server: 172.67.139.111
     port: 8880
     type: vless
     uuid: b40941dd-981b-4025-ad1f-18a0ba15ad88
@@ -19,7 +19,7 @@ proxies:
   - name: atharva
     interface-name: wwan0
     type: trojan
-    server: 172.67.139.111
+    server: 104.21.8.121
     port: 443
     password: d14d2626-a0ad-49ee-8bb1-0fe701d2771c
     udp: true
