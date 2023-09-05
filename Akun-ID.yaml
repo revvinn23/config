@@ -16,7 +16,7 @@ proxies:
         Host: nusa-1.patunganvps.my.id
     udp: true
         
-  - name: atharva
+  - name: atharva LiveON
     interface-name: wwan0
     type: trojan
     server: 104.21.8.121
