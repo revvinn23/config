@@ -1,5 +1,23 @@
 proxies:
-  - name: revvin_ws
+  - name: revvin_ws Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vmess
+    uuid: c039de48-508b-4b0b-a76d-8865a01dd7ce
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: melbi.lunoxx.gay
+    alterId: 0
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: melbi.lunoxx.gay
+        
+  - name: revvin_ws LiveON
     interface-name: wwan0
     server: 104.21.8.121
     port: 443
@@ -16,8 +34,25 @@ proxies:
       path: /vmessws
       headers:
         Host: melbi.lunoxx.gay
+
+  - name: testvless.revvinn.my.id Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: 5b93f1cb-c2c7-493d-94db-250803de5f92
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: testvless.revvinn.my.id
+    ws-opts:
+      path: /2048
+      headers:
+        Host: testvless.revvinn.my.id
         
-  - name: testvless.revvinn.my.id
+  - name: testvless.revvinn.my.id LiveON
     interface-name: wwan0
     server: 104.21.8.121
     port: 443
@@ -33,6 +68,23 @@ proxies:
       path: /2048
       headers:
         Host: testvless.revvinn.my.id
+        
+  - name: hanangocok Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: b8378733-fa17-48ab-aaae-20394fc7ba97
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: gfloid.lunoxx.gay
+    ws-opts:
+      path: /vless
+      headers:
+        Host: gfloid.lunoxx.gay
         
   - name: hanangocok
     interface-name: wwan0
@@ -50,6 +102,23 @@ proxies:
       path: /vless
       headers:
         Host: gfloid.lunoxx.gay
+        
+   - name: sgsfgse_vmess_ws_tls Halo
+    interface-name: eth1
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: 15688ea3-9c84-4fe1-93d7-0b5f7a2ff4fa
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: ovh-sg03.ipxray.xyz
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: ovh-sg03.ipxray.xyz
         
   - name: sgsfgse_vmess_ws_tls LiveON
     interface-name: wwan0
