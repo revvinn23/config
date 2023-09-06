@@ -3,8 +3,9 @@ proxies:
     interface-name: wwan0
     server: 104.21.8.121
     port: 80
-    type: vless
+    type: vmess
     uuid: a6741bae-ffeb-454c-8a24-5fc96610001f
+    alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
@@ -15,7 +16,7 @@ proxies:
       headers:
         Host: cpanel.iptunnels.com
     udp: true
-
+    
   - name: XL id
     interface-name: wwan0
     type: vmess
