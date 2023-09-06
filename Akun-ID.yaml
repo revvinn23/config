@@ -1,4 +1,22 @@
 proxies:
+  - name: natawsvmess
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 80
+    type: vmess
+    uuid: 8bccd774-1517-496a-afc3-ea67639ae3d2
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: nata.wesi.fun
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: nata.wesi.fun
+    udp: true
+    
   - name: Biznet West
     interface-name: wwan0
     server: 104.21.8.121
