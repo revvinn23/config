@@ -35,23 +35,6 @@ proxies:
       path: /vmessws
       headers:
         Host: melbi.lunoxx.gay
-
-  - name: testvless.revvinn.my.id Halo
-    interface-name: eth1
-    server: testvless.revvinn.my.id
-    port: 443
-    type: vless
-    uuid: 5b93f1cb-c2c7-493d-94db-250803de5f92
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: www.shopee.com
-    ws-opts:
-      path: /2048
-      headers:
-        Host: www.shopee.com
         
   - name: testvless.revvinn.my.id LiveON
     interface-name: wwan0
