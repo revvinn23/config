@@ -32,7 +32,7 @@ proxies:
           
   - name: natawsvmess Halo
     interface-name: eth1
-    server: 104.16.53.111
+    server: nata.wesi.fun
     port: 80
     type: vmess
     uuid: 8bccd774-1517-496a-afc3-ea67639ae3d2
@@ -40,12 +40,12 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: nata.wesi.fun
+    servername: www.shopee.com
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: nata.wesi.fun
+        Host: www.shopee.com
     udp: true
     
   - name: natawsvmess LiveON
@@ -68,7 +68,7 @@ proxies:
 
   - name: Biznet West Halo
     interface-name: eth1
-    server: 104.16.53.111
+    server: cpanel.iptunnels.com
     port: 80
     type: vmess
     uuid: a6741bae-ffeb-454c-8a24-5fc96610001f
@@ -76,12 +76,12 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: cpanel.iptunnels.com
+    servername: www.shopee.com
     network: ws
     ws-opts:
       path: /buy-vmess-ws-pm-telegram-at-synricha
       headers:
-        Host: cpanel.iptunnels.com
+        Host: www.shopee.com
     udp: true
     
   - name: Biznet West LiveON
@@ -104,19 +104,19 @@ proxies:
       
   - name: Banda_Neira_ws Halo
     interface-name: eth1
-    server: 104.16.53.111
+    server:  nusa-1.patunganvps.my.id
     port: 8880
     type: vless
     uuid: b40941dd-981b-4025-ad1f-18a0ba15ad88
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: nusa-1.patunganvps.my.id
+    servername: www.shopee.com
     network: ws
     ws-opts:
       path: /vlessws
       headers:
-        Host: nusa-1.patunganvps.my.id
+        Host: www.shopee.com
     udp: true
     
   - name: Banda_Neira_ws LiveON
@@ -138,19 +138,19 @@ proxies:
 
   - name: zimaBoard_VVIP_HTTP Halo
     interface-name: eth1
-    server: 104.16.53.111
+    server: runcloud-bgn.apasih.id
     port: 80
     type: vless
     uuid: 0dc4eef0-4aca-48b5-af73-7e299333fd87
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: runcloud-bgn.apasih.id
+    servername: www.shopee.com
     network: ws
     ws-opts:
       path: /buy-vless-ws-pm-telegram-at-synricha
       headers:
-        Host: runcloud-bgn.apasih.id
+        Host: www.shopee.com
     udp: true
     
   - name: zimaBoard_VVIP_HTTP LiveON
@@ -208,7 +208,7 @@ proxies:
     
   - name: napolly_ws Halo
     interface-name: eth1
-    server: 104.16.53.111
+    server: sanggoro-2.patunganvps.my.id
     port: 80
     type: vmess
     uuid: 466a4046-f6a0-4d20-a78d-4db266deb0e5
@@ -216,12 +216,12 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: sanggoro-2.patunganvps.my.id
+    servername: www.shopee.com
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: sanggoro-2.patunganvps.my.id
+        Host: www.shopee.com
     udp: true
     
   - name: napolly_ws LiveON
