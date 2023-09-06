@@ -32,24 +32,6 @@ proxies:
       headers:
         Host: nusa-1.patunganvps.my.id
     udp: true
-        
-  - name: herza 443
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vmess
-    uuid: df96c5b8-a441-4ef1-9662-5879541d0a62
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: ws
-    servername: herza.wibu-xray.com
-    alterId: 0
-    ws-opts:
-      path: /wibu
-      headers:
-        Host: herza.wibu-xray.com
 
   - name: zimaBoard_VVIP_HTTP LiveON
     interface-name: wwan0
