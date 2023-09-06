@@ -1,33 +1,4 @@
 proxies:
-  - name: tunfree Halo
-    interface-name: eth1
-    server: rwb.bestmpc.xyz
-    port: 443
-    type: trojan
-    password: 1605bce1-7d99-4a49-9e5f-5cd3a136e551
-    network: ws
-    sni: www.shopee.com
-    skip-cert-verify: true
-    udp: true
-    ws-opts:
-      path: /buy-trojan-ws-pm-telegram-at-synricha
-      headers:
-          Host: www.shopee.com
-          
-  - name: tunfree LiveON
-    interface-name: wwan0
-    server: rwb.bestmpc.xyz
-    port: 443
-    type: trojan
-    password: 1605bce1-7d99-4a49-9e5f-5cd3a136e551
-    network: ws
-    sni: www.shopee.com
-    skip-cert-verify: true
-    udp: true
-    ws-opts:
-      path: /buy-trojan-ws-pm-telegram-at-synricha
-      headers:
-          Host: www.shopee.com
           
   - name: Biznet West tj Halo
     interface-name: eth1
