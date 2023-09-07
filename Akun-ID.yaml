@@ -1,5 +1,22 @@
 proxies:
-          
+  - name: trial-gnEKAex
+    interface-name: wwan0
+    server: 104.21.8.121
+    port: 80
+    type: vmess
+    uuid: 241b4ce0-d432-4b9d-aba7-e8a51780925f
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: wijaya.ordervpn.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: wijaya.ordervpn.my.id
+    udp: true
+    
   - name: Biznet West tj Halo
     interface-name: eth1
     server: cpanel.iptunnels.com
