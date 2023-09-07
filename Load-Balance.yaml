@@ -3,7 +3,7 @@ proxy-providers:
   ID:
     type: http
     path: "./proxy_provider/Akun-ID.yaml"
-    url: https://raw.githubusercontent.com/revvinn23/config/main/Akun-ID.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/revvinn23/config/main/Akun-ID.yaml
     interval: 60
     health-check:
       enable: true
@@ -12,7 +12,7 @@ proxy-providers:
   SG:
     type: http
     path: "./proxy_provider/Akun-SG.yaml"
-    url: https://raw.githubusercontent.com/revvinn23/config/main/Akun-SG.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/revvinn23/config/main/Akun-SG.yaml
     interval: 60
     health-check:
       enable: true
@@ -21,7 +21,7 @@ proxy-providers:
   GAME:
     type: http
     path: "./proxy_provider/Akun-GAME.yaml"
-    url: https://raw.githubusercontent.com/revvinn23/config/main/Akun-GAME.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/revvinn23/config/main/Akun-GAME.yaml
     interval: 60
     health-check:
       enable: true
@@ -104,49 +104,49 @@ proxy-groups:
   - Jalur SG
   - Jalur ID
 - name: Koneksi Umum
-  type: fallback
-  lazy: false
+  type: select
+  use:
+  - ID
+  - SG
   proxies:
   - Jalur SG
   - Jalur ID
   - Direct Multi-WAN
   url: http://www.gstatic.com/generate_204
-  interval: 30
+  interval: 60
 - name: Koneksi Indo
-  type: fallback
-  lazy: false
+  type: select
+  use:
+  - ID
+  - SG
   proxies:
   - Jalur ID
   - Jalur SG
   - Koneksi Direct
   url: http://www.gstatic.com/generate_204
-  interval: 30
+  interval: 60
 - name: Koneksi Streaming
   type: select
-  lazy: false
   use:
   - ID
   - SG
-  - GAME
   proxies:
   - Jalur SG
   - Jalur ID
   - Direct Multi-WAN
   url: http://www.gstatic.com/generate_204
-  interval: 30
+  interval: 60
 - name: Koneksi Sosmed
   type: select
-  lazy: false
   use:
   - ID
   - SG
-  - GAME
   proxies:
   - Jalur ID
   - Jalur SG
   - Direct Multi-WAN
   url: http://www.gstatic.com/generate_204
-  interval: 30
+  interval: 60
 - name: Speedtest
   type: select
   use:
@@ -157,6 +157,8 @@ proxy-groups:
   - Jalur ID
   - Jalur SG
   - Direct Multi-WAN
+  url: http://www.gstatic.com/generate_204
+  interval: 60
 - name: Custom
   type: select
   use:
@@ -177,7 +179,7 @@ find-process-mode: 'off'
 allow-lan: true
 bind-address: "*"
 mode: rule
-log-level: silent
+log-level: debug
 ipv6: false
 unified-delay: false
 global-client-fingerprint: none
@@ -216,12 +218,15 @@ dns:
   ipv6: false
   prefer-h3: false
   default-nameserver:
-  - 9.9.9.9
-  - 149.112.112.112
+  - 1.1.1.1
+  - 1.0.0.1
+  - 8.8.8.8
+  - 8.8.4.4
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   nameserver:
-  - https://dns11.quad9.net/dns-query
+  - 9.9.9.9
+  - 149.112.112.112
   nameserver-policy:
     geosite:rule-indo:
     - 1.0.0.1
@@ -331,33 +336,29 @@ dns:
   - "+.media.dssott.com"
   - shark007.net
   fallback:
-  - tls://dns11.quad9.net:853
+  - 1.1.1.1
+  - 1.0.0.1
 rules:
+- DST-PORT,7895,REJECT
+- DST-PORT,7892,REJECT
+- IP-CIDR,198.18.0.1/16,REJECT,no-resolve
 - GEOIP,private,DIRECT,no-resolve
 - RULE-SET,rule_direct,Koneksi Direct
 - GEOSITE,rule-doh,Koneksi Direct
-#Customized Rules
 - RULE-SET,rule_custom,Custom
 - GEOSITE,rule-malicious,REJECT
 - GEOSITE,oisd-full,Koneksi Ads
 - GEOSITE,rule-ads,Koneksi Ads
 - GEOSITE,oisd-nsfw,Koneksi NSFW
 - GEOSITE,category-porn,Koneksi NSFW
-#playstore
 - GEOSITE,rule-playstore,Koneksi Umum
-#WhatMyip
 - GEOSITE,rule-ipcheck,Speedtest
-#OpenAI
 - GEOSITE,openai,Koneksi Indo
-#ecommerce
 - GEOSITE,ecommerce-id,Koneksi Indo
-#bank
 - GEOSITE,bank-id,Koneksi Indo
-#Speedtest
 - GEOSITE,rule-speedtest,Speedtest
 - DST-PORT,8080,Speedtest
 - GEOSITE,rule-umum,Koneksi Umum
-#Zerotier
 - OR,((GEOSITE,rule-umum),(DST-PORT,9993/29994/40775/43215)),Koneksi Umum
 - GEOSITE,rule-indo,Koneksi Indo
 - GEOIP,netflix,Koneksi Indo
@@ -367,108 +368,80 @@ rules:
 - GEOIP,facebook,Koneksi Sosmed
 - GEOIP,telegram,Koneksi Sosmed
 - GEOSITE,videoconference,Koneksi Streaming
-#Spotify
 - DST-PORT,4070,Koneksi Indo,tcp
 - DST-PORT,4070,Koneksi Indo,udp
-#Remote Desktop Connection (TeamViewer,Anydesk)
 - OR,((DST-PORT,6568/7070),(DOMAIN-SUFFIX,net.anydesk.com)),Koneksi Streaming
 - AND,((DST-PORT,5938),(DOMAIN-SUFFIX,teamviewer.com)),Koneksi Streaming
-#VideoConference
-- DST-PORT,3478-3497/8801-8810/16384-16387/1853/8200/5004/9000/5090-5091/5349/10000/19302-19309/5938/5060-5061/500/4500,Koneksi Streaming
-#MLBB
-- DST-PORT,5000-5221/5224-5227/5229-5241/5243-5287/5289-5352/5354-5509/5517/5520-5529/5551-5559/5601-5700/8443/9000-9010/9443/10003/30000-30300,Koneksi PortGames,tcp
-- DST-PORT,5517-5529/5551-5559/5601-5700/8001/8130/8443/9000-9010/960/9992/10003/30000-30300,Koneksi PortGames,udp
-#FF
-- DST-PORT,6006/6008/6674/7006-7008/7889/8001-8012/9006/9137/10000-10012/11000-11019/6006/6008/13006/15006/20561/39003/39006/39698/39779/39800,Koneksi PortGames,tcp
-- DST-PORT,6006/6008/6674/7006-7008/7889/8008/8001-8012/8130/8443/9008/960/10000-10015/10100/11000-11019/6008/13008,Koneksi PortGames,udp
-#PUBG Mobile
-- DST-PORT,8085-8088/10012/14000/15692/17000/17500/18081/20000-20002/20371,Koneksi PortGames,tcp
-- DST-PORT,7086-7995/8011-8013/8700/9030-9031/10013/10019/10039/10096/10491/10612/11455/12235/13748/13894/13972/17000/17500/20000-20002/6070-12460/41182-41192,Koneksi PortGames,udp
-#CODM Garena
+- DST-PORT,3478-3497/8801-8810/16384-16387/1853/8200/5004/9000/5090-5091/5349/10000/19302-19309/5938/5060-5061/500/4500,Koneksi
+  Streaming
+- DST-PORT,5000-5221/5224-5227/5229-5241/5243-5287/5289-5352/5354-5509/5517/5520-5529/5551-5559/5601-5700/8443/9000-9010/9443/10003/30000-30300,Koneksi
+  PortGames,tcp
+- DST-PORT,5517-5529/5551-5559/5601-5700/8001/8130/8443/9000-9010/9120/9992/10003/30000-30300,Koneksi
+  PortGames,udp
+- DST-PORT,6006/6008/6674/7006-7008/7889/8001-8012/9006/9137/10000-10012/11000-11019/12006/12008/13006/15006/20561/39003/39006/39698/39779/39800,Koneksi
+  PortGames,tcp
+- DST-PORT,6006/6008/6674/7006-7008/7889/8008/8001-8012/8130/8443/9008/9120/10000-10015/10100/11000-11019/12008/13008,Koneksi
+  PortGames,udp
+- DST-PORT,8085-8088/10012/14000/15692/17000/17500/18081/20000-20002/20371,Koneksi
+  PortGames,tcp
+- DST-PORT,7086-7995/8011-8013/8700/9030-9031/10013/10019/10039/10096/10491/10612/11455/12235/13748/13894/13972/17000/17500/20000-20002/12070-12460/41182-41192,Koneksi
+  PortGames,udp
 - DST-PORT,8013/8085/10000-10019/18082/20000/50000/65010/65050,Koneksi PortGames,tcp
 - DST-PORT,7500-7995/8700/9030/10010-10019/20000-20001,Koneksi PortGames,udp
-#AOV Garena
 - DST-PORT,8013/10000-10001/18082/20000-20001/20166/31003/33445/50000,Koneksi PortGames,tcp
 - DST-PORT,5008/8011/8700/10000/14050/14080/17000,Koneksi PortGames,udp
-#Stumble Guys
 - DST-PORT,5055-5058,Koneksi PortGames,udp
-#Genshin Impact
 - DST-PORT,42472,Koneksi PortGames,tcp
 - DST-PORT,42472/22101-22102,Koneksi PortGames,udp
-#Clash of Clans (COC) & Clash Royale
 - DST-PORT,9330-9340,Koneksi PortGames,tcp
 - DST-PORT,9330-9340,Koneksi PortGames,udp
-#League of Legends (LOL) Mobile
 - DST-PORT,2080-2099,Koneksi PortGames,tcp
 - DST-PORT,5100,Koneksi PortGames,udp
-#DOTA2
-- DST-PORT,9100-9200/8230-8250/8110-860/27000-28998,Koneksi PortGames,tcp
+- DST-PORT,9100-9200/8230-8250/8110-8120/27000-28998,Koneksi PortGames,tcp
 - DST-PORT,27000-28998/39000,Koneksi PortGames,udp
-#FIFA ONLINE
 - DST-PORT,7770-7790,Koneksi PortGames,tcp
 - DST-PORT,16300-16350,Koneksi PortGames,udp
-#Point Blank Mobile (PB-Mobile)
 - DST-PORT,44590-44610,Koneksi PortGames,tcp
 - DST-PORT,40000-40010,Koneksi PortGames,udp
-#LINE Let’s Get Rich
 - DST-PORT,10500-10515,Koneksi PortGames,tcp
-#Dream League Soccer
 - DST-PORT,60970-60980,Koneksi PortGames,udp
-#Among Us
 - DST-PORT,27015-27030/27036-27037,Koneksi PortGames,tcp
 - DST-PORT,4380/27000-27031/27036,Koneksi PortGames,udp
-#Bleach ES
 - DST-PORT,14422,Koneksi PortGames
-# growrtopia
 - DST-PORT,16999,Koneksi PortGames
-# apex|ff|mlbb|pubg
 - DST-PORT,8013/8888,Koneksi PortGames
-#Tower of Fantasy (Android)
 - DST-PORT,30031,Koneksi PortGames,tcp
 - DST-PORT,8000/30104,Koneksi PortGames,udp
-#PB Zeppeto / PB PC
 - DST-PORT,39190-39200/49001-49190,Koneksi PortGames,tcp
 - DST-PORT,40000-40010,Koneksi PortGames,udp
-#LOST SAGA PC/GN
 - DST-PORT,14009/40005,Koneksi PortGames
-#Supercell Games
 - DST-PORT,9339,Koneksi PortGames,tcp
-#Valorant
 - DST-PORT,2099/8088/8393-8400,Koneksi PortGames,tcp
 - DST-PORT,7000-8000/8180-8181/8088/27016-27024/54000-54012,Koneksi PortGames,udp
-#Honor of Kings
 - DST-PORT,5692/8085/8500/10000/10082/20000/25000/29134/31003,Koneksi PortGames,tcp
 - DST-PORT,5010/6650/8011/8700/20000/25000/29134/30000,Koneksi PortGames,udp
-#for ALL ports games
 - AND,((NOT,((RULE-SET,rule_umum))),(NETWORK,TCP)),Koneksi PortGames
 - AND,((NOT,((RULE-SET,rule_umum))),(NETWORK,UDP)),Koneksi PortGames
 - GEOSITE,rule-gaming,Koneksi Gaming
-#Koneksi  Umum
 - RULE-SET,rule_umum,Koneksi Umum
 rule-providers:
   rule_direct:
-    type: http
+    type: file
     behavior: classical
     path: "./rule_provider/rule_direct.yaml"
-    url: https://raw.githubusercontent.com/revvinn23/config/main/rule_direct.yaml
-    interval: 3600
   rule_custom:
-    type: http
+    type: file
     behavior: classical
     path: "./rule_provider/rule_custom.yaml"
-    url: https://raw.githubusercontent.com/revvinn23/config/main/rule_custom.yaml
-    interval: 3600
   rule_umum:
-    type: http
+    type: file
     behavior: classical
     path: "./rule_provider/rule_umum.yaml"
-    url: https://raw.githubusercontent.com/revvinn23/config/main/rule_umum.yaml
-    interval: 3600
 tun:
   enable: true
   stack: system
   device: utun
   auto-route: false
-  auto-detect-interface: true
+  auto-detect-interface: false
   dns-hijack:
   - tcp://any:53
