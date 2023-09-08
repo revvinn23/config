@@ -1,33 +1,4 @@
 proxies:
-  - name: Avatar Halo
-    interface-name: eth1
-    type: trojan
-    server: atharva-5.vpspatungan.my.id
-    port: 443
-    password: d14d2626-a0ad-49ee-8bb1-0fe701d2771c
-    udp: true
-    sni: www.shopee.com
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /trojan-ws
-      headers:
-        Host: www.shopee.com
-        
-  - name: Avatar LiveON
-    interface-name: wwan0
-    type: trojan
-    server: 104.21.90.217
-    port: 443
-    password: d14d2626-a0ad-49ee-8bb1-0fe701d2771c
-    udp: true
-    sni: atharva-5.vpspatungan.my.id
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /trojan-ws
-      headers:
-        Host: atharva-5.vpspatungan.my.id
         
   - name: Biznet West tj Halo
     interface-name: eth1
