@@ -18,7 +18,7 @@ proxies:
         
   - name: edyjawa_ws LiveON
     interface-name: wwan0
-    server: 172.67.205.138
+    server: 172.67.139.111
     port: 443
     type: vless
     uuid: 4c536c1c-6bb4-4210-ac42-bc45a9cb0db0
