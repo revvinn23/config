@@ -10,11 +10,11 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: mbasic.facebook.com
+    servername: open.spotify.com
     ws-opts:
       path: /vlessws
       headers:
-        Host: mbasic.facebook.com
+        Host: open.spotify.com
         
   - name: edyjawa_ws LiveON
     interface-name: wwan0
