@@ -1,5 +1,38 @@
 proxies:
-       
+  - name: edyjawa_ws Halo
+    interface-name: eth1
+    server: gfloid.lunoxx.gay
+    port: 443
+    type: vless
+    uuid: 4c536c1c-6bb4-4210-ac42-bc45a9cb0db0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: www.shopee.com
+    ws-opts:
+      path: /vlessws
+      headers:
+        Host: www.shopee.com
+        
+  - name: edyjawa_ws LiveON
+    interface-name: wwan0
+    server: gfloid.lunoxx.gay
+    port: 443
+    type: vless
+    uuid: 4c536c1c-6bb4-4210-ac42-bc45a9cb0db0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: www.shopee.com
+    ws-opts:
+      path: /vlessws
+      headers:
+        Host: www.shopee.com
+        
   - name: revvin_ws Halo
     interface-name: eth1
     server: melbi.lunoxx.gay
