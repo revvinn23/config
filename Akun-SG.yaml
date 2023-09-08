@@ -1,7 +1,7 @@
 proxies:
   - name: edyjawa_ws Halo
     interface-name: eth1
-    server: 104.16.53.111
+    server: gfloid.lunoxx.gay
     port: 443
     type: vless
     uuid: 4c536c1c-6bb4-4210-ac42-bc45a9cb0db0
@@ -10,11 +10,11 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: gfloid.lunoxx.gay
+    servername: mbasic.facebook.com
     ws-opts:
       path: /vlessws
       headers:
-        Host: gfloid.lunoxx.gay
+        Host: mbasic.facebook.com
         
   - name: edyjawa_ws LiveON
     interface-name: wwan0
