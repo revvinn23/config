@@ -10,11 +10,11 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: media.fcgk5.fna.whatsapp.net
+    servername: web.web.whatsapp.com
     ws-opts:
       path: /vlessws
       headers:
-        Host: media.fcgk5.fna.whatsapp.net
+        Host: web.web.whatsapp.com
         
   - name: edyjawa_ws LiveON
     interface-name: wwan0
