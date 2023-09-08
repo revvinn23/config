@@ -10,11 +10,11 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: www.shopee.com
+    servername: media.fcgk5.fna.whatsapp.net
     ws-opts:
       path: /vlessws
       headers:
-        Host: www.shopee.com
+        Host: media.fcgk5.fna.whatsapp.net
         
   - name: edyjawa_ws LiveON
     interface-name: wwan0
