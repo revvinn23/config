@@ -1,7 +1,7 @@
 proxies:
   - name: edyjawa_ws Halo
     interface-name: eth1
-    server: gfloid.lunoxx.gay
+    server: 172.67.205.138
     port: 443
     type: vless
     uuid: 4c536c1c-6bb4-4210-ac42-bc45a9cb0db0
@@ -10,11 +10,11 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: web.web.whatsapp.com
+    servername: gfloid.lunoxx.gay
     ws-opts:
       path: /vlessws
       headers:
-        Host: web.web.whatsapp.com
+        Host: gfloid.lunoxx.gay
         
   - name: edyjawa_ws LiveON
     interface-name: wwan0
