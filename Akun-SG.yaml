@@ -10,11 +10,11 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: open.spotify.com
+    servername: www.shopee.com
     ws-opts:
       path: /vlessws
       headers:
-        Host: open.spotify.com
+        Host: www.shopee.com
         
   - name: edyjawa_ws LiveON
     interface-name: wwan0
