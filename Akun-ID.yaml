@@ -49,7 +49,7 @@ proxies:
     
   - name: natawsvmess LiveON
     interface-name: wwan0
-    server: 104.21.8.121
+    server: 104.21.90.217
     port: 80
     type: vmess
     uuid: 8bccd774-1517-496a-afc3-ea67639ae3d2
@@ -85,7 +85,7 @@ proxies:
     
   - name: Biznet West LiveON
     interface-name: wwan0
-    server: 104.21.8.121
+    server: 104.21.90.217
     port: 80
     type: vmess
     uuid: a6741bae-ffeb-454c-8a24-5fc96610001f
@@ -154,7 +154,7 @@ proxies:
     
   - name: zimaBoard_VVIP_HTTP LiveON
     interface-name: wwan0
-    server: 104.21.8.121
+    server: 104.21.90.217
     port: 80
     type: vless
     uuid: 0dc4eef0-4aca-48b5-af73-7e299333fd87
@@ -225,7 +225,7 @@ proxies:
     
   - name: napolly_ws LiveON
     interface-name: wwan0
-    server: 104.21.8.121
+    server: 104.21.90.217
     port: 80
     type: vmess
     uuid: 466a4046-f6a0-4d20-a78d-4db266deb0e5
