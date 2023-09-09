@@ -18,7 +18,7 @@ proxies:
         
   - name: edyjawa_ws LiveON
     interface-name: wwan0
-    server: 104.21.8.121
+    server: revvinn.revvvinnn.my.id
     port: 443
     type: vless
     uuid: 4c536c1c-6bb4-4210-ac42-bc45a9cb0db0
@@ -53,7 +53,7 @@ proxies:
         
   - name: revvin_ws LiveON
     interface-name: wwan0
-    server: 104.21.8.121
+    server: revvinn.revvvinnn.my.id
     port: 443
     type: vmess
     uuid: c039de48-508b-4b0b-a76d-8865a01dd7ce
