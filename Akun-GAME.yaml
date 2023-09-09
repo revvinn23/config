@@ -1,7 +1,7 @@
 proxies:
   - name: Banda_Neira_ws Game
     interface-name: wwan0
-    server: 104.21.90.217
+    server: revvinn.revvvinnn.my.id
     port: 8880
     type: vless
     uuid: b40941dd-981b-4025-ad1f-18a0ba15ad88
@@ -18,7 +18,7 @@ proxies:
     
   - name: zimaBoard_VVIP_HTTP LiveON Game
     interface-name: wwan0
-    server: 104.21.90.217
+    server: revvinn.revvvinnn.my.id
     port: 80
     type: vless
     uuid: 0dc4eef0-4aca-48b5-af73-7e299333fd87
