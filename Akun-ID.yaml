@@ -1,5 +1,23 @@
 proxies:
-          
+
+  - name: free
+    interface-name: wwan0
+    server: 172.67.75.37
+    port: 80
+    type: vmess
+    uuid: f9c9e027-498e-4612-943c-995f4485b869
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    servername: ic.bestmpc.xyz
+    network: ws
+    alterId: 0
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: ic.bestmpc.xyz
+ 
   - name: natawsvmess Halo
     interface-name: eth1
     server: nata.wesi.fun
