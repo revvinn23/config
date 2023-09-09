@@ -1,34 +1,4 @@
 proxies:
-        
-  - name: Biznet West tj Halo
-    interface-name: eth1
-    server: cpanel.iptunnels.com
-    port: 443
-    type: trojan
-    password: 543884dc866b0e85
-    network: ws
-    sni: www.shopee.com
-    skip-cert-verify: true
-    udp: true
-    ws-opts:
-      path: /buy-trojan-ws-pm-telegram-at-synricha
-      headers:
-          Host: www.shopee.com
-          
-  - name: Biznet West tj LiveON
-    interface-name: wwan0
-    server: cpanel.iptunnels.com
-    port: 443
-    type: trojan
-    password: 543884dc866b0e85
-    network: ws
-    sni: www.shopee.com
-    skip-cert-verify: true
-    udp: true
-    ws-opts:
-      path: /buy-trojan-ws-pm-telegram-at-synricha
-      headers:
-          Host: www.shopee.com
           
   - name: natawsvmess Halo
     interface-name: eth1
