@@ -20,7 +20,7 @@ proxies:
     
   - name: natawsvmess LiveON
     interface-name: wwan0
-    server: 104.26.14.208
+    server: 172.67.75.37
     port: 80
     type: vmess
     uuid: 8bccd774-1517-496a-afc3-ea67639ae3d2
@@ -55,7 +55,7 @@ proxies:
     
   - name: Banda_Neira_ws LiveON
     interface-name: wwan0
-    server: 104.26.14.208
+    server: 172.67.75.37
     port: 8880
     type: vless
     uuid: b40941dd-981b-4025-ad1f-18a0ba15ad88
@@ -89,7 +89,7 @@ proxies:
     
   - name: zimaBoard_VVIP_HTTP LiveON
     interface-name: wwan0
-    server: 104.26.14.208
+    server: 172.67.75.37
     port: 80
     type: vless
     uuid: 0dc4eef0-4aca-48b5-af73-7e299333fd87
@@ -160,7 +160,7 @@ proxies:
     
   - name: napolly_ws LiveON
     interface-name: wwan0
-    server: 104.26.14.208
+    server: 172.67.75.37
     port: 80
     type: vmess
     uuid: 466a4046-f6a0-4d20-a78d-4db266deb0e5
