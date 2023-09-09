@@ -19,7 +19,7 @@ proxies:
         
   - name: revvin_ws LiveON
     interface-name: wwan0
-    server: melbi.lunoxx.gay
+    server: 104.16.143.190
     port: 443
     type: vmess
     uuid: c039de48-508b-4b0b-a76d-8865a01dd7ce
@@ -28,9 +28,9 @@ proxies:
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: www.shopee.com
+    servername: melbi.lunoxx.gay
     alterId: 0
     ws-opts:
       path: /vmessws
       headers:
-        Host: www.shopee.com
+        Host: melbi.lunoxx.gay
