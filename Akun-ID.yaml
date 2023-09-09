@@ -85,19 +85,19 @@ proxies:
     
   - name: Banda_Neira_ws LiveON
     interface-name: wwan0
-    server: revvinn.revvvinnn.my.id
+    server: nusa-1.patunganvps.my.id
     port: 8880
     type: vless
     uuid: b40941dd-981b-4025-ad1f-18a0ba15ad88
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: nusa-1.patunganvps.my.id
+    servername: www.shopee.com
     network: ws
     ws-opts:
       path: /vlessws
       headers:
-        Host: nusa-1.patunganvps.my.id
+        Host: www.shopee.com
     udp: true
 
   - name: zimaBoard_VVIP_HTTP Halo
