@@ -50,7 +50,7 @@ proxies:
     
   - name: natawsvmess LiveON
     interface-name: wwan0
-    server: revvinn.revvvinnn.my.id
+    server: 104.17.224.203
     port: 80
     type: vmess
     uuid: 8bccd774-1517-496a-afc3-ea67639ae3d2
@@ -85,19 +85,19 @@ proxies:
     
   - name: Banda_Neira_ws LiveON
     interface-name: wwan0
-    server: nusa-1.patunganvps.my.id
+    server: 104.17.224.203
     port: 8880
     type: vless
     uuid: b40941dd-981b-4025-ad1f-18a0ba15ad88
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: www.shopee.com
+    servername: nusa-1.patunganvps.my.id
     network: ws
     ws-opts:
       path: /vlessws
       headers:
-        Host: www.shopee.com
+        Host: nusa-1.patunganvps.my.id
     udp: true
 
   - name: zimaBoard_VVIP_HTTP Halo
@@ -119,7 +119,7 @@ proxies:
     
   - name: zimaBoard_VVIP_HTTP LiveON
     interface-name: wwan0
-    server: revvinn.revvvinnn.my.id
+    server: 104.17.224.203
     port: 80
     type: vless
     uuid: 0dc4eef0-4aca-48b5-af73-7e299333fd87
@@ -190,7 +190,7 @@ proxies:
     
   - name: napolly_ws LiveON
     interface-name: wwan0
-    server: revvinn.revvvinnn.my.id
+    server: 104.17.224.203
     port: 80
     type: vmess
     uuid: 466a4046-f6a0-4d20-a78d-4db266deb0e5
