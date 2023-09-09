@@ -65,42 +65,6 @@ proxies:
       headers:
         Host: nata.wesi.fun
     udp: true
-
-  - name: Biznet West Halo
-    interface-name: eth1
-    server: cpanel.iptunnels.com
-    port: 80
-    type: vmess
-    uuid: a6741bae-ffeb-454c-8a24-5fc96610001f
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: www.shopee.com
-    network: ws
-    ws-opts:
-      path: /buy-vmess-ws-pm-telegram-at-synricha
-      headers:
-        Host: www.shopee.com
-    udp: true
-    
-  - name: Biznet West LiveON
-    interface-name: wwan0
-    server: 172.67.205.138
-    port: 80
-    type: vmess
-    uuid: a6741bae-ffeb-454c-8a24-5fc96610001f
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: cpanel.iptunnels.com
-    network: ws
-    ws-opts:
-      path: /buy-vmess-ws-pm-telegram-at-synricha
-      headers:
-        Host: cpanel.iptunnels.com
-    udp: true
       
   - name: Banda_Neira_ws Halo
     interface-name: eth1
