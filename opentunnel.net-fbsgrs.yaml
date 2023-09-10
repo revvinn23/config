@@ -28,9 +28,7 @@ dns:
     - 8.8.8.8
     - 8.8.4.4
 proxies:
- 
   - name: free
-    interface-name: wwan0
     server: 172.67.75.37
     port: 80
     type: vmess
