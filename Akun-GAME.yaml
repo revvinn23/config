@@ -15,20 +15,3 @@ proxies:
       headers:
         Host: nusa-1.patunganvps.my.id
     udp: true
-    
-  - name: zimaBoard_VVIP_HTTP LiveON Game
-    interface-name: wwan0
-    server: 172.67.75.37
-    port: 80
-    type: vless
-    uuid: 0dc4eef0-4aca-48b5-af73-7e299333fd87
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: runcloud-bgn.apasih.id
-    network: ws
-    ws-opts:
-      path: /buy-vless-ws-pm-telegram-at-synricha
-      headers:
-        Host: runcloud-bgn.apasih.id
-    udp: true
