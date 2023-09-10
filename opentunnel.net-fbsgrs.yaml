@@ -50,9 +50,7 @@ proxy-groups:
   - name: OPENTUNNEL
     type: select
     proxies:
-      - HERZA SG LiveON
-      - vmesrm LiveON
-      - herza 443 LiveON
+      - free
       - DIRECT
 rules:
   - MATCH,OPENTUNNEL
