@@ -28,57 +28,24 @@ dns:
     - 8.8.8.8
     - 8.8.4.4
 proxies:
-  - name: herza 443 LiveON
-    server: 104.21.8.121
-    port: 443
-    type: vmess
-    uuid: df96c5b8-a441-4ef1-9662-5879541d0a62
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: herza.wibu-xray.com
-    network: ws
-    ws-opts:
-      path: /wibu
-      headers:
-        Host: herza.wibu-xray.com
-    udp: true
-
-  - name: vmesrm LiveON
-    server: 104.21.8.121
+ 
+  - name: free
+    interface-name: wwan0
+    server: 172.67.75.37
     port: 80
     type: vmess
-    uuid: e1a72034-954b-4cb6-81d2-f83dab00ddb5
-    alterId: 0
+    uuid: f9c9e027-498e-4612-943c-995f4485b869
     cipher: auto
     tls: false
+    udp: true
     skip-cert-verify: true
-    servername: ruma.wesi.fun
+    servername: ic.bestmpc.xyz
     network: ws
+    alterId: 0
     ws-opts:
       path: /vmess
       headers:
-        Host: ruma.wesi.fun
-    udp: true
-
-  - name: HERZA SG LiveON
-    interface-name: wwan0
-    server: 104.21.8.121
-    port: 443
-    type: vmess
-    uuid: 217dd354-1170-485d-89f1-58c639890376
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: herza-SG.wibu-xray.com
-    network: ws
-    ws-opts:
-      path: /WIBU
-      headers:
-        Host: herza-SG.wibu-xray.com
-    udp: true
+        Host: ic.bestmpc.xyz
 proxy-groups:
   - name: OPENTUNNEL
     type: select
