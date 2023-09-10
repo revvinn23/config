@@ -1,4 +1,40 @@
 proxies:
+  - name: nurulopyu_ws Halo
+    interface-name: eth1
+    server: gfloid.lunoxx.gay
+    port: 443
+    type: vmess
+    uuid: 5c71f68f-8b1e-461f-9127-005db0e41982
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: www.shopee.com
+    alterId: 0
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: www.shopee.com
+        
+  - name: nurulopyu_ws LiveON
+    interface-name: wwan0
+    server: 104.16.143.190
+    port: 443
+    type: vmess
+    uuid: 5c71f68f-8b1e-461f-9127-005db0e41982
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: gfloid.lunoxx.gay
+    alterId: 0
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: gfloid.lunoxx.gay
+        
   - name: revvin_ws Halo
     interface-name: eth1
     server: melbi.lunoxx.gay
