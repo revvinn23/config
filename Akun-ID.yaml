@@ -1,5 +1,4 @@
 proxies:
-
   - name: free
     interface-name: wwan0
     server: 172.67.75.37
@@ -17,10 +16,10 @@ proxies:
       path: /vmess
       headers:
         Host: ic.bestmpc.xyz
-      
+
   - name: Banda_Neira_ws Halo
     interface-name: eth1
-    server:  nusa-1.patunganvps.my.id
+    server: nusa-1.patunganvps.my.id
     port: 8880
     type: vless
     uuid: b40941dd-981b-4025-ad1f-18a0ba15ad88
@@ -34,7 +33,7 @@ proxies:
       headers:
         Host: www.shopee.com
     udp: true
-    
+
   - name: Banda_Neira_ws LiveON
     interface-name: wwan0
     server: 172.67.75.37
@@ -68,7 +67,7 @@ proxies:
       headers:
         Host: www.shopee.com
     udp: true
-    
+
   - name: zimaBoard_VVIP_HTTP LiveON
     interface-name: wwan0
     server: 172.67.75.37
@@ -85,7 +84,7 @@ proxies:
       headers:
         Host: runcloud-bgn.apasih.id
     udp: true
-    
+
   - name: napolly_ws Halo
     interface-name: eth1
     server: sanggoro-2.patunganvps.my.id
@@ -103,7 +102,7 @@ proxies:
       headers:
         Host: www.shopee.com
     udp: true
-    
+
   - name: napolly_ws LiveON
     interface-name: wwan0
     server: 172.67.75.37
