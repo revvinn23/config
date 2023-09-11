@@ -16,7 +16,7 @@ proxies:
       path: /vmessws
       headers:
         Host: www.shopee.com
-        
+
   - name: nurulopyu_ws LiveON
     interface-name: wwan0
     server: 104.16.143.190
@@ -34,7 +34,7 @@ proxies:
       path: /vmessws
       headers:
         Host: gfloid.lunoxx.gay
-        
+
   - name: revvin_ws Halo
     interface-name: eth1
     server: melbi.lunoxx.gay
@@ -52,7 +52,7 @@ proxies:
       path: /vmessws
       headers:
         Host: www.shopee.com
-        
+
   - name: revvin_ws LiveON
     interface-name: wwan0
     server: 104.16.143.190
