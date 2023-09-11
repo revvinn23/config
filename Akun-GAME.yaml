@@ -16,7 +16,7 @@ proxies:
         Host: nusa-1.patunganvps.my.id
     udp: true
 
-  - name: zimaBoard_VVIP_HTTP LiveON
+  - name: zimaBoard_VVIP_HTTP LiveON Game
     interface-name: wwan0
     server: 172.67.75.37
     port: 80
