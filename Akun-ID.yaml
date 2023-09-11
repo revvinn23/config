@@ -17,42 +17,6 @@ proxies:
       path: /vmess
       headers:
         Host: ic.bestmpc.xyz
- 
-  - name: natawsvmess Halo
-    interface-name: eth1
-    server: nata.wesi.fun
-    port: 80
-    type: vmess
-    uuid: 8bccd774-1517-496a-afc3-ea67639ae3d2
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: www.shopee.com
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: www.shopee.com
-    udp: true
-    
-  - name: natawsvmess LiveON
-    interface-name: wwan0
-    server: 172.67.75.37
-    port: 80
-    type: vmess
-    uuid: 8bccd774-1517-496a-afc3-ea67639ae3d2
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: nata.wesi.fun
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: nata.wesi.fun
-    udp: true
       
   - name: Banda_Neira_ws Halo
     interface-name: eth1
